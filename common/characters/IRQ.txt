@@ -1,0 +1,102 @@
+characters={
+
+
+	IRQ_Yassin_AlHashemi={
+		name="Yassin Al-Hashemi"
+		portraits={
+			civilian={
+				large="gfx/leaders/IRQ/Yassin_AlHashemi.dds"
+			}
+		}
+		country_leader={
+			ideology=despotism
+			traits={ dictator }
+			expire="1989.1.1"
+			id=10000
+		}
+	}
+
+	IRQ_Rashid_Ali={
+		name="Rashid Ali Al-Gaylani"
+		portraits={
+			civilian={
+				large="gfx/leaders/IRQ/Rashid_Ali.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ dictator }
+			expire="1936.11.20"
+			id=10001
+		}
+	}
+
+	IRQ_Ghazi_I={
+		name="Ghazi I"
+		portraits={
+			civilian={
+				large="gfx/leaders/IRQ/Ghazi.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ nationalist_symbol }
+			expire="1989.1.1"
+			id=10002
+		}
+	}
+
+	IRQ_Abdullah_of_Hejaz={
+		name="Abdullah of Hejaz"
+		portraits={
+			civilian={
+				large="gfx/leaders/IRQ/Abdullah_of_Hejaz.dds"
+			}
+		}
+		country_leader={
+			ideology=fascism_ideology
+			traits={ }
+			expire="1989.1.1"
+			id=10003
+		}
+	}
+
+	IRQ_Rashid_Ali_Al-Gaylani={
+		name="Rashid Ali Al-Gaylani"
+		advisor={
+			slot = political_advisor
+			idea_token = Rashid_Ali_Al-Gaylani
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			available  = { has_completed_focus  = IRQ_End_Civil_War_1936 }
+			traits  = { compassionate_gentleman }
+		}
+	}
+
+	IRQ_Bakr_Sidqi={
+		name="Bakr Sidqi"
+		advisor={
+			slot = army_chief
+			idea_token = Bakr_Sidqi
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			available  = { has_completed_focus  = IRQ_Civil_War }
+			traits  = { army_chief_defensive_3 }
+		}
+		portraits={
+			army={ small="GFX_idea_pietro_badoglio" }
+			army={ large="gfx/leaders/ITA/portrait_italy_pietro_badoglio.dds" }
+		}
+		field_marshal={
+			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-1
+		}
+	}
+}

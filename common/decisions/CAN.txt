@@ -1,0 +1,100 @@
+CAN_parliament_support = {
+	CAN_voting_legislation = {
+		icon = generic_political_discourse
+		priority = 100
+		allowed = { tag = CAN } 
+		available = {
+        	hidden_trigger = { always = no }
+        }
+		activation = { 
+			has_country_flag = CAN_voting_legislation_focus 
+		}
+
+		fire_only_once = no
+		days_mission_timeout = 34
+		cancel_trigger = {
+			NOT = {
+				has_country_flag = CAN_voting_legislation_focus
+			}
+		}
+		timeout_effect = {
+			custom_effect_tooltip = CAN_parliament_busy_tt
+		}
+	}
+}
+
+CAN_mutual_aid = {
+
+	CAN_help_uk_1 = {
+		priority = 100
+		allowed = { tag = CAN } 
+		available = {
+        	always = yes
+        }
+		days_remove = 90
+		
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			ENG = {
+				add_timed_idea = { idea = CAN_helping_uk_1 days = 90 }
+			}
+		}
+	}
+	CAN_help_uk_2 = {
+		priority = 100
+		allowed = { tag = CAN } 
+		available = {
+        	always = yes
+        }
+		days_remove = 90
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			ENG = {
+				add_timed_idea = { idea = CAN_helping_uk_2 days = 90 }
+			}
+		}
+	}
+	CAN_help_uk_3 = {
+		priority = 100
+		allowed = { tag = CAN } 
+		available = {
+        	always = yes
+        }
+		days_remove = 90
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			ENG = {
+				add_timed_idea = { idea = CAN_helping_uk_3 days = 90 }
+			}
+		}
+	}
+	CAN_help_uk_4 = {
+		priority = 100
+		allowed = { tag = CAN } 
+		available = {
+        	always = yes
+        }
+		days_remove = 90
+
+		modifier = {
+			consumer_goods_factor = 0.05
+		}
+
+		complete_effect = {
+			ENG = {
+				add_timed_idea = { idea = CAN_helping_uk_4 days = 90 }
+			}
+		}
+	}
+}

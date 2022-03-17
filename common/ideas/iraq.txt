@@ -1,0 +1,389 @@
+ideas = {
+
+	# MILITARY
+	country = {
+
+		IRQ_Naval = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = IRQ_Phantom
+			modifier = { industrial_capacity_dockyard = -0.50 }
+		}
+
+		IRQ_Military_Factory = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = { industrial_capacity_factory = -0.50 }
+		}
+
+		IRQ_Military_Navy_Factory = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = { 
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+			}
+		}
+
+		IRQ_Military_Navy_Factory_2 = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = { 
+				industrial_capacity_factory = 0.30
+				industrial_capacity_dockyard = -0.25
+			}
+		}
+
+		IRQ_Inside_Issues = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = { 
+				political_power_factor = -0.20
+				stability_factor = -0.3
+				conscription_factor = -0.1
+			 }
+		}
+
+		IRQ_Begging_to_fix_Inside_Issues = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = { 
+				political_power_factor = -0.10
+				stability_factor = -0.15
+				conscription_factor = -0.05
+			 }
+		}
+
+		IRQ_Begging_to_fix_Inside_Issues_2 = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = { 
+				political_power_factor = 0.05
+				stability_factor = 0.05
+				conscription_factor = 0.05
+			 }
+		}
+
+		IRQ_New_method_to_fix_Inside_Issues = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = { 
+				political_power_factor = -0.3
+				stability_factor = -0.2
+				conscription_factor = 0.1
+			 }
+		}
+
+		IRQ_New_method_to_fix_Inside_Issues_2 = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = { 
+				political_power_factor = -0.3
+				stability_factor = -0.2
+				conscription_factor = 0.25
+			 }
+		}
+
+		IRQ_UK_Steal_Iraq_Oil = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				production_oil_factor = -0.5
+				local_resources_factor = -0.5
+				stability_factor = -0.1
+				conscription_factor = -0.1
+			 }	 
+		}
+
+		IRQ_UK_Steal_half_Iraq_Oil = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				production_oil_factor = -0.25
+				local_resources_factor = -0.25
+				stability_factor = -0.05
+				conscription_factor = -0.05
+			 }	 
+		}
+
+		IRQ_UK_Steal_half_Iraq_Oil = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				production_oil_factor = -0.25
+				local_resources_factor = -0.25
+				stability_factor = -0.05
+				conscription_factor = -0.05
+			 }	 
+		}
+
+		IRQ_Oil_Seekers = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				production_oil_factor = 0.1
+				local_resources_factor = 0.1
+			 }	 
+		}
+
+		IRQ_Oil_Seekers_2 = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				production_oil_factor = 0.2
+				local_resources_factor = 0.1
+			 }	 
+		}
+
+		IRQ_Specialists_Germany = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				production_oil_factor = -0.10
+				local_resources_factor = -0.10
+				consumer_goods_factor = -0.025
+			 }	 
+		}
+
+		IRQ_Specialists_Germany_2 = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				production_oil_factor = 0.05
+				local_resources_factor = 0.05
+				consumer_goods_factor = -0.05
+			 }	 
+		}
+
+		IRQ_sanctions_against_ENG = {
+			picture = chi_hyper_inflation
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			ROOT = { has_war_with = ENG }
+			removal_cost = -1
+			modifier = {
+				stability_factor = -0.05 
+				min_export = 0.05 
+			}
+		}
+
+		IRQ_Ban_commonwealth_trading = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			targeted_modifier = {
+				tag = GER
+				trade_cost_for_target_factor = -0.50
+			}	 
+		}
+
+		IRQ_Welcome_commonwealth_trading = { 
+			allowed = { always = no }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				production_oil_factor = 0.1
+				local_resources_factor = 0.1
+				stability_factor = 0.1
+				conscription_factor = 0.05
+			 } 
+		}
+
+		IRQ_Military_Studies = { 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				stability_factor = -0.1
+				political_power_factor = -0.1
+			 }
+			research_bonus = {
+				industry = -0.3
+				infantry_weapons = -0.05
+				artillery = -0.10
+				armor = -1.0
+				naval_equipment = -1.0
+				air_equipment = -1.0
+			}	 
+		}
+
+		IRQ_Military_Studies_2 = {
+		allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.05
+			}
+			research_bonus = {
+				industry = -0.15
+				infantry_weapons = 0.05
+				artillery = -0.05
+				armor = -1.0
+				naval_equipment = -1.0
+				air_equipment = -1.0
+			}
+		}
+
+		IRQ_Military_Studies_3 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.15
+				infantry_weapons = 0.1
+				artillery = 0.1
+				armor = -1.0
+				naval_equipment = -1.0
+				air_equipment = -1.0
+			}
+		}
+
+		IRQ_Military_Studies_4 = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				stability_factor = 0.1
+				political_power_factor = 0.1
+			}
+			research_bonus = {
+				industry = 0.2
+				infantry_weapons = 0.2
+				artillery = 0.1
+				armor = -0.2
+				naval_equipment = -0.2
+				air_equipment = -0.2
+			}
+		}
+
+		IRQ_New_Iraq = {
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+			picture = saf_ossewabrandwag
+			modifier = {
+				war_support_weekly = 0.0035
+				stability_weekly = 0.001
+				political_power_factor = 0.1
+				consumer_goods_factor = -0.05
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+			}
+		}
+
+		IRQ_The_Spirit_of_Iraq_in_Defense  = {
+			picture = generic_fascism_drift_2
+			available = { original_tag = IRQ }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.05
+				political_power_factor = 0.1
+				army_core_defence_factor = 0.2		
+			}							
+		}
+
+		IRQ_One_Body  = {
+			picture = generic_fascism_drift_2
+			available = { original_tag = IRQ }
+			removal_cost = -1
+			modifier = {
+				industrial_capacity_factory = 0.1
+				compliance_growth_on_our_occupied_states = -0.20
+				resistance_growth_on_our_occupied_states = 0.20	
+				resistance_damage_to_garrison = 0.20
+			}							
+		}
+
+		IRQ_Arab_Horse  = {
+			picture = generic_fascism_drift_2
+			available = { original_tag = IRQ }
+			removal_cost = -1
+			modifier = {
+				cavalry_attack_factor = 0.15 
+				cavalry_defence_factor = 0.1
+			}							
+		}
+
+		IRQ_Iraq_Army  = {
+			picture = generic_fascism_drift_2
+			available = { original_tag = IRQ }
+			removal_cost = -1
+			modifier = {
+				heat_attrition_factor = -0.15
+				acclimatization_hot_climate_gain_factor = 0.1
+			}							
+		}
+
+		IRQ_Desert_Castle  = {
+			picture = generic_fascism_drift_2
+			available = { original_tag = IRQ }
+			removal_cost = -1
+			modifier = {
+				max_dig_in_factor = 0.1
+				planning_speed = 0.2
+			}							
+		}
+
+		IRQ_Expanded_Axis_Oil_Trade = {
+			picture = generic_constitutional_guarantees
+			removal_cost = -1
+			allowed = { original_tag = IRQ }
+			modifier = {
+				max_fuel_factor = 0.2
+				production_factory_max_efficiency_factor = 0.1
+				production_speed_buildings_factor = 0.1							
+			}
+		}
+
+			theorist_production = {
+			IRQ_nuri_as_said = {
+
+				picture = generic_political_advisor_arab_1
+				
+				allowed = { original_tag = IRQ }
+				traits = { armaments_organizer }
+			}	
+		}
+	}
+}

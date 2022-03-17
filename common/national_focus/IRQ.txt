@@ -1,0 +1,1420 @@
+focus_tree = {
+	id = iraq_focus
+	
+	country = {
+		factor = 0
+		
+		modifier = {
+			add = 1000
+			original_tag = IRQ
+		}
+	}
+
+	continuous_focus_position = { x = 2000 y = 1000 }
+	default = no
+
+	focus = {
+		id = IRQ_Civil_War
+		icon = GFX_focus_chi_british_cooperation
+		x = 12
+		y = 0
+		cost = 10
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		bypass = { has_government = fascism }
+		completion_reward = {
+			set_capital = { state = 676 }
+			start_civil_war = {
+				ruling_party = fascism
+				ideology = ROOT
+				size = 0
+				capital = 291
+				states = { 291 }
+			}
+			hidden_effect = {
+				random_other_country = {
+					limit = {
+						original_tag = IRQ
+						has_government = neutrality
+					}
+					division_template = { 
+						name = "Yassin Al-Hashemi forces" 
+						division_names_group = IRQ_INF_01 is_locked = no
+						regiments = { 
+							pack_artillery_brigade = { x = 0 y = 0 }
+							pack_artillery_brigade = { x = 0 y = 1 } 
+							pack_artillery_brigade = { x = 0 y = 2 }
+							pack_artillery_brigade = { x = 0 y = 3 }
+							infantry = { x = 1 y = 0 } 
+							infantry = { x = 1 y = 1 } 
+							infantry = { x = 1 y = 2 } 
+							infantry = { x = 1 y = 3 }
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }
+						}
+					}
+					291 = {
+						create_unit = { 
+						division = "name = \"1. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"2. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"3. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"4. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"5. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"6. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"7. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"8. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"9. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"10. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"11. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+					}
+				}
+			}
+			hidden_effect = {
+				division_template = { 
+					name = "The Iraqi National Reform Force" 
+					division_names_group = IRQ_INF_01 is_locked = no
+					regiments = { 
+						pack_artillery_brigade = { x = 0 y = 0 }
+						pack_artillery_brigade = { x = 0 y = 1 } 
+						pack_artillery_brigade = { x = 0 y = 2 }
+						pack_artillery_brigade = { x = 0 y = 3 }
+						infantry = { x = 1 y = 0 } 
+						infantry = { x = 1 y = 1 } 
+						infantry = { x = 1 y = 2 } 
+						infantry = { x = 1 y = 3 }
+						infantry = { x = 2 y = 0 }
+						infantry = { x = 2 y = 1 } 
+					}
+					support = { 
+						DIV_HQ = { x = 0 y = 0 } 
+						recon = { x = 0 y = 1 } 
+						engineer = { x = 0  y = 2 } 
+					} 
+				}
+				676 = {
+					create_unit = { 
+					division = "name = \"1. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.3" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"2. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.3" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"3. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.3" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"4. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.3" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"5. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.3" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"6. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.3" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"7. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.3" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"8. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.3" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"9. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.4" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"10. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.5" 
+					owner = ROOT
+					}
+				}
+				675 = {
+					create_unit = { 
+					division = "name = \"11. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.6" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"12. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.7" 
+					owner = ROOT
+					}
+					create_unit = { 
+					division = "name = \"13. The Iraqi National Reform Force\" division_template = \"The Iraqi National Reform Force\" start_experience_factor = 0.8" 
+					owner = ROOT
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Left_Side
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = IRQ_Civil_War }
+		mutually_exclusive = { focus = IRQ_Right_Side }
+		x = 11
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		available = { has_government = fascism }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_political_power = 50
+			IRQ = {
+				add_opinion_modifier = { target = ENG modifier = embargo }
+				add_opinion_modifier = { target = ENG modifier = sanctions_relations } 
+				add_ideas = IRQ_sanctions_against_ENG 
+			}
+			every_other_country = {
+				limit = { 
+					NOT = { tag = USA }
+					OR = {
+						has_government = democratic
+						tag = INS
+					}
+				}
+				add_opinion_modifier = { target = IRQ modifier = embargo }
+				add_opinion_modifier = { target = IRQ modifier = condemn_aggression }
+				add_opinion_modifier = { target = IRQ modifier = sanctions_relations } 
+			}	
+			random_owned_controlled_state = {
+				prioritize = { 291 }
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+			random_owned_controlled_state = {
+				prioritize = { 676 }
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Right_Side
+		prerequisite = { focus = IRQ_Civil_War }
+		icon = GFX_focus_chi_british_cooperation
+		mutually_exclusive = { focus = IRQ_Left_Side }
+		x = 13
+		y = 1
+		cost = 5
+		available_if_capitulated = no
+		available = { has_government = neutrality }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 291 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Left_1
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = IRQ_Left_Side }
+		x = 11
+		y = 2
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_tech_bonus = {
+				category = industry
+				bonus = 1
+				uses = 2
+			}
+			add_political_power = 50
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = IRQ_Right_1
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = IRQ_Right_Side }
+		x = 13
+		y = 2
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_tech_bonus = {
+				category = industry
+				bonus = 0.25
+				uses = 4
+			}
+			add_stability = 0.02
+			add_war_support = 0.05
+		}
+	}
+
+	focus = {
+		id = IRQ_Left_2_1
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = IRQ_Left_1 }
+		x = 10
+		y = 3
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_political_power = 50
+			add_stability = 0.02
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = IRQ_Left_2_2
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = IRQ_Left_1 }
+		x = 8
+		y = 3
+		cost = 5
+		available = {
+			NOT = {
+				has_tech = mobile_warfare 
+				has_tech = superior_firepower
+				has_tech = mass_assault 
+			}
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		set_technology = { infantry_weapons1 = 1 }
+		army_experience = 30
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				technology = grand_battle_plan
+			}
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	focus = {
+		id = IRQ_Right_2_1
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = IRQ_Right_1 }
+		x = 14
+		y = 3
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 291 }
+				add_building_construction = {
+					type = infrastructure
+					level = 2
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					ROOT = { has_full_control_of_state = PREV }
+					is_core_of = ROOT
+					free_building_slots = {
+					building = industrial_complex
+					size > 1
+					include_locked = yes
+					}					
+				}
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Right_2_2
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = IRQ_Right_1 }
+		x = 16
+		y = 3
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_state = {
+					limit = {
+						is_core_of = IRQ
+						is_fully_controlled_by = IRQ
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes 
+					}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Left_3
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = IRQ_Left_1 }
+		prerequisite = { focus = IRQ_Left_2_1 }
+		x = 11
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		available = { IRQ = { has_civil_war = no } }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			add_tech_bonus = {
+				category = industry
+				bonus = 1
+				uses = 1
+			}
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = IRQ_Right_3
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = IRQ_Right_1 }
+		prerequisite = { focus = IRQ_Right_2_1 }
+		x = 13
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = anti_air_building
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Left_3_1
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = IRQ_Left_2_1 }
+		prerequisite = { focus = IRQ_Left_2_2 }
+		x = 9
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_popularity = {
+				ideology = fascism
+				popularity = 0.05
+			}
+			set_technology = { 
+				electronic_mechanical_engineering = 1
+				radio = 1
+				tech_radio_1 = 1
+			}
+			add_stability = 0.02
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = IRQ_Left_3_2
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = IRQ_Left_2_2 }
+		x = 7
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			set_technology = { 
+				basic_skills = 1
+			}
+			add_stability = 0.02
+			add_political_power = 50
+		}
+	}
+
+	focus = {
+		id = IRQ_Right_3_1
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = IRQ_Right_2_1 }
+		prerequisite = { focus = IRQ_Right_2_2 }
+		x = 15
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 291 }
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 291 }
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Right_3_2
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = IRQ_Right_2_2 }
+		x = 17
+		y = 4
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			D04 = {
+				add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1000 producer = D04 }
+				add_equipment_to_stockpile = { type = support_equipment_1 amount = 200 producer = D04 }
+				add_equipment_to_stockpile = { type = radio_equipment_1 amount = 200 producer = D04 }
+				add_equipment_to_stockpile = { type = motorized_equipment amount = 100 producer = D04 }
+				add_equipment_to_stockpile = { type = horse_equipment amount = 1000 producer = D04 }
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Left_4
+		icon = GFX_focus_chi_mission_to_germany
+		prerequisite = { focus = IRQ_Left_3 }
+		prerequisite = { focus = IRQ_Left_3_1 }
+		prerequisite = { focus = IRQ_Left_3_2 }
+		x = 9
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 675 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 3
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_End_Civil_War_1936
+		icon = GFX_FRA_VIC_rationing
+		ai_will_do = { factor = 1 }
+		prerequisite = { focus = IRQ_Left_3 focus = IRQ_Right_3 }
+		x = 12
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		available = { 
+			date > 1936.11.01
+			has_government = fascism 
+		}
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Ghazi I"
+				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+				picture = "Ghazi.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits={ nationalist_symbol }
+			}
+			custom_effect_tooltip = available_political_advisor
+			show_ideas_tooltip = Ghazii_I_pol
+		}
+	}
+
+	focus = {
+		id = IRQ_Right_4
+		icon = GFX_focus_chi_british_cooperation
+		prerequisite = { focus = IRQ_Right_3 }
+		prerequisite = { focus = IRQ_Right_3_1 }
+		prerequisite = { focus = IRQ_Right_3_2 }
+		x = 15
+		y = 5
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 291 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Technologies_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_End_Civil_War_1936 }
+		x = 12
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Military_Studies_2
+				remove_idea = IRQ_Military_Studies
+			}
+			add_research_slot = 1
+		}
+	}
+
+	focus = {
+		id = IRQ_Technologies_left_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Technologies_1 }
+		mutually_exclusive = { focus = IRQ_Technologies_Right_1 }
+		x = 11
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Military_Studies_3
+				remove_idea = IRQ_Military_Studies_2
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Technologies_Right_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Technologies_1 }
+		mutually_exclusive = { focus = IRQ_Technologies_left_1 }
+		x = 13
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			remove_ideas = IRQ_Military_Factory
+			remove_ideas = IRQ_Naval
+			add_ideas = IRQ_Military_Navy_Factory
+		}
+	}
+
+	focus = {
+		id = IRQ_Technologies_left_2
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Technologies_left_1 }
+		x = 11
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Military_Studies_4
+				remove_idea = IRQ_Military_Studies_3
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Technologies_Right_2
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Technologies_Right_1 }
+		x = 13
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Military_Navy_Factory_2
+				remove_idea = IRQ_Military_Navy_Factory
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Social_Situation_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_End_Civil_War_1936}
+		x = 16
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Social_Situation_left_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Social_Situation_1 }
+		mutually_exclusive = { focus = IRQ_Social_Situation_Right_1 }
+		x = 15
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Begging_to_fix_Inside_Issues
+				remove_idea = IRQ_Inside_Issues
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Social_Situation_Right_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Social_Situation_1 }
+		mutually_exclusive = { focus = IRQ_Social_Situation_left_1 }
+		x = 17
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_New_method_to_fix_Inside_Issues
+				remove_idea = IRQ_Inside_Issues
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Social_Situation_left_2
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Social_Situation_left_1 }
+		x = 15
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Begging_to_fix_Inside_Issues_2
+				remove_idea = IRQ_Begging_to_fix_Inside_Issues
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Social_Situation_Right_2
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Social_Situation_Right_1 }
+		x = 17
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_New_method_to_fix_Inside_Issues_2
+				remove_idea = IRQ_New_method_to_fix_Inside_Issues
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Baghdad_University_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_End_Civil_War_1936}
+		x = 8
+		y = 7
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_UK_Steal_half_Iraq_Oil
+				remove_idea = IRQ_UK_Steal_Iraq_Oil
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Count_on_the_oil_seekers_left_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Baghdad_University_1 }
+		mutually_exclusive = { focus = IRQ_Specialists_from_Germany_Right_1 }
+		x = 7
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			remove_ideas = IRQ_UK_Steal_half_Iraq_Oil
+			add_ideas = IRQ_Oil_Seekers
+		}
+	}
+
+	focus = {
+		id = IRQ_Specialists_from_Germany_Right_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Baghdad_University_1 }
+		mutually_exclusive = { focus = IRQ_Count_on_the_oil_seekers_left_1 }
+		x = 9
+		y = 8
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Specialists_Germany
+				remove_idea = IRQ_UK_Steal_half_Iraq_Oil
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Count_on_the_oil_seekers_left_2
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Count_on_the_oil_seekers_left_1 }
+		x = 7
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Oil_Seekers_2
+				remove_idea = IRQ_Oil_Seekers
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Specialists_from_Germany_Right_2
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Specialists_from_Germany_Right_1 }
+		x = 9
+		y = 9
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			swap_ideas = {
+				add_idea = IRQ_Specialists_Germany_2
+				remove_idea = IRQ_Specialists_Germany
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Finially_Step_in_Social_Situation_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Social_Situation_left_2 focus = IRQ_Social_Situation_Right_2}
+		x = 16
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = IRQ_Finially_Step_in_West_Technologies_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Technologies_left_2 focus = IRQ_Technologies_Right_2}
+		x = 12
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = IRQ_Finially_Step_in_Baghdad_University_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Count_on_the_oil_seekers_left_2 focus = IRQ_Specialists_from_Germany_Right_2 }
+		x = 8
+		y = 10
+		cost = 5
+		available_if_capitulated = no
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+		}
+	}
+
+	focus = {
+		id = IRQ_New_Iraq_1
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Finially_Step_in_Social_Situation_1 }
+		prerequisite = { focus = IRQ_Finially_Step_in_West_Technologies_1 }
+		prerequisite = { focus = IRQ_Finially_Step_in_Baghdad_University_1 }
+		x = 12
+		y = 12
+		cost = 10
+		available_if_capitulated = no
+		available = { date > 1937.8.11 }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			add_ideas = IRQ_New_Iraq
+			add_political_power = 150
+		}
+	}
+
+	focus = {
+		id = IRQ_Basra_Airport 
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_New_Iraq_1 }
+		x = 14
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+		available = { date > 1938.3.24 }
+		IRQ = {	controls_state = 676 }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			random_owned_controlled_state = {
+				prioritize = { 676 }
+				add_building_construction = {
+					type = air_base
+					level = 5
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = radar_station
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = IRQ_Order_No._38
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_New_Iraq_1 }
+		x = 10
+		y = 13
+		cost = 10
+		available_if_capitulated = no
+		available = { date > 1938.1.1 }
+		IRQ = {	controls_state = 676 }
+		ai_will_do = { factor = 1 }
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_core_of = IRQ
+					is_fully_controlled_by = IRQ
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes 
+				}
+			}
+		}
+	}
+
+	focus = {  
+		id = IRQ_Unclear_Focus_for_Our_Army
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_New_Iraq_1 }
+		x = 20
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			random_owned_controlled_state = {
+				prioritize = { 291 }
+				add_building_construction = {
+					type = arms_factory
+					level = 2
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+			set_technology = { 
+				field_equipment_2 = 1
+				tech_mountaineers2 = 1
+				tech_special_forces = 1
+			}
+			army_experience = 50
+		}
+	}
+
+	focus = {  
+		id = IRQ_Mass_MOB_1
+		icon = r56_goal_generic_camelry
+		prerequisite = { focus = IRQ_Unclear_Focus_for_Our_Army }
+		mutually_exclusive = { focus = IRQ_GBI_1 }
+		x = 23
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			set_technology = { pack_artillery2 = 1 }
+			army_experience = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				technology = pocket_defence 
+				technology = defence_in_depth 
+			}
+			add_ideas = IRQ_One_Body
+		}
+	}
+
+	focus = {  
+		id = IRQ_GBI_1
+		icon = r56_goal_generic_german_assistance
+		prerequisite = { focus = IRQ_Unclear_Focus_for_Our_Army }
+		mutually_exclusive = { focus = IRQ_Mass_MOB_1 }
+		x = 17
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			set_technology = { pack_artillery2 = 1 }
+			army_experience = 50
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = artillery
+			}			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				technology = pocket_defence
+			}
+			add_ideas = IRQ_The_Spirit_of_Iraq_in_Defense
+		}
+	}
+
+	focus = {  
+		id = IRQ_Arab_Horse
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Mass_MOB_1 }
+		x = 23
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			army_experience = 50
+			add_ideas = IRQ_Arab_Horse
+		}
+	}
+
+	focus = {  
+		id = IRQ_Iraq_Army
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Mass_MOB_1 focus = IRQ_GBI_1}
+		x = 20
+		y = 15
+		cost = 5
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			army_experience = 50
+			add_ideas = IRQ_Iraq_Army
+		}
+	}
+
+	focus = {  
+		id = IRQ_Desert_Castle
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_GBI_1 }
+		x = 17
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			army_experience = 50
+			add_ideas = IRQ_Desert_Castle
+		}
+	}
+
+	focus = {  
+		id = IRQ_Kut_Barrage
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_New_Iraq_1 }
+		available = { date > 1939.3.29 }
+		x = 12
+		y = 13
+		cost = 0.6
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			add_political_power = 50
+			add_stability = 0.02
+		}
+	}
+
+	focus = {  
+		id = IRQ_Anglo-Iraqi_War
+		icon = r56_goal_generic_camelry
+		prerequisite = { focus = IRQ_King's_Car_Accident  }
+		mutually_exclusive = { focus = IRQ_UK_Killed_Ghazi_I }
+		available = { 
+			date > 1941.5.2
+		}
+		x = 14
+		y = 15
+		cost = 1
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			army_experience = 100			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			GER = { country_event = generic.2 }
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Rashid Ali Al-Gaylani"
+				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+				picture = "IRQ_Abdullah_of_Hejaz.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits={ nationalist_symbol }
+			}
+		}
+	}
+
+	focus = {  
+		id = IRQ_UK_Killed_Ghazi_I
+		icon = r56_goal_generic_german_assistance
+		prerequisite = { focus = IRQ_King's_Car_Accident  }
+		mutually_exclusive = { focus = IRQ_Anglo-Iraqi_War}
+		available = { 
+			date > 1939.10.1
+			date < 1940.3.29
+		}
+		x = 10
+		y = 15
+		cost = 5
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			army_experience = 50			
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+			GER = { country_event = generic.2 }
+		}
+	}
+
+	focus = {  
+		id = IRQ_King's_Car_Accident 
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Kut_Barrage }
+		available = { date > 1939.4.4 }
+		x = 12
+		y = 14
+		cost = 0.4
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Abdullah of Hejaz"
+				desc = "POLITICS_ÉDOUARD_DALADIER_DESC"
+				picture = "IRQ_Abdullah_of_Hejaz.dds"
+				expire = "1965.1.1"
+				ideology = fascism_ideology
+				traits={ }
+			}
+		}
+	}
+
+	focus = {  
+		id = IRQ_5
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_UK_Killed_Ghazi_I}
+		x = 10
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			army_experience = 50
+			add_ideas = IRQ_Iraq_Army
+		}
+	}
+
+	focus = {  
+		id = IRQ_6
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_Anglo-Iraqi_War }
+		x = 14
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			army_experience = 50
+			add_ideas = IRQ_Desert_Castle
+		}
+	}
+
+	focus = {  
+		id = IRQ_New_Oil
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_New_Iraq_1 }
+		x = 5
+		y = 13
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 291
+			}
+			add_resource = {
+				type = oil
+				amount = 5
+				state = 676
+			}
+		}
+	}
+
+	focus = {  
+		id = IRQ_Synthetic_Oil
+		icon = r56_goal_generic_camelry
+		prerequisite = { focus = IRQ_New_Oil }
+		mutually_exclusive = { focus = IRQ_Infrastructure }
+		x = 2
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 3
+				category = synth_resources
+			}
+		}
+	}
+
+	focus = {  
+		id = IRQ_Infrastructure
+		icon = r56_goal_generic_german_assistance
+		prerequisite = { focus = IRQ_New_Oil }
+		mutually_exclusive = { focus = IRQ_Synthetic_Oil }
+		x = 8
+		y = 14
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			add_tech_bonus = {
+				bonus = 0.5
+				uses = 2
+				category = industry
+			}
+		}
+	}
+
+	focus = {  
+		id = IRQ_10
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_New_Oil }
+		x = 6
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			random_owned_controlled_state = {
+				prioritize = { 676 }
+				add_building_construction = {
+					type = fuel_silo
+					level = 1
+					instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 675 }
+				add_building_construction = {
+					type = synthetic_refinery
+					level = 1
+					instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {  
+		id = IRQ_11
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_New_Oil}
+		x = 4
+		y = 15
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			random_owned_controlled_state = {
+				prioritize = { 291 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 675 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 1
+			}
+			random_owned_controlled_state = {
+				prioritize = { 674 }
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			add_extra_state_shared_building_slots = 1
+			}
+		}
+	}
+
+	focus = {  
+		id = IRQ_Expanded_Axis_Oil_Trade
+		icon = GFX_GER_endless_offensives
+		prerequisite = { focus = IRQ_New_Oil }
+		prerequisite = { focus = IRQ_10 }
+		prerequisite = { focus = IRQ_11 }
+		x = 5
+		y = 16
+		cost = 10
+		ai_will_do = { factor = 12 }
+		completion_reward = { add_ideas = IRQ_Expanded_Axis_Oil_Trade }
+	}
+}

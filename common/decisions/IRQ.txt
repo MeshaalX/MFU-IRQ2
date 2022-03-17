@@ -1,0 +1,19 @@
+operations = {
+		IRQ_expand_home_industry = {
+		icon = generic_construction
+		available = { 
+			tag = IRQ
+			has_stability > 0.5
+		}
+		visible = { NOT = { has_war_with = ENG } }
+		ai_will_do = { factor = 0 }
+		custom_cost_text = ENG_200_british_money 
+		days_remove = 90
+		days_re_enable = 90
+		fire_only_once = no
+		modifier = { 
+			production_speed_industrial_complex_factor = 0.1
+			stability_factor = -0.10
+		}
+	}
+}	
