@@ -7,7 +7,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = IRQ_Phantom
+			picture = generic_navy_bonus
 			modifier = { industrial_capacity_dockyard = -0.50 }
 		}
 
@@ -15,7 +15,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_SOV_second_five_year_plan
 			modifier = { industrial_capacity_factory = -0.50 }
 		}
 
@@ -23,7 +23,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_SOV_third_five_year_plan
 			modifier = { 
 				industrial_capacity_factory = -0.25
 				industrial_capacity_dockyard = -0.25
@@ -34,7 +34,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_man_five_year_plan_tank
 			modifier = { 
 				industrial_capacity_factory = 0.30
 				industrial_capacity_dockyard = -0.25
@@ -45,7 +45,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = ROM_violent_paramilitary_groups
 			modifier = { 
 				political_power_factor = -0.20
 				stability_factor = -0.3
@@ -57,7 +57,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_italy_winter_training_in_finland
 			modifier = { 
 				political_power_factor = -0.10
 				stability_factor = -0.15
@@ -69,7 +69,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_italy_winter_training_in_finland
 			modifier = { 
 				political_power_factor = 0.05
 				stability_factor = 0.05
@@ -81,7 +81,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = SLO_deport_undesirables
 			modifier = { 
 				political_power_factor = -0.3
 				stability_factor = -0.2
@@ -93,7 +93,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = SLO_deport_undesirables
 			modifier = { 
 				political_power_factor = -0.3
 				stability_factor = -0.2
@@ -105,7 +105,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = ROM_the_resource_curse
 			modifier = {
 				production_oil_factor = -0.5
 				local_resources_factor = -0.5
@@ -118,20 +118,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
-			modifier = {
-				production_oil_factor = -0.25
-				local_resources_factor = -0.25
-				stability_factor = -0.05
-				conscription_factor = -0.05
-			 }	 
-		}
-
-		IRQ_UK_Steal_half_Iraq_Oil = { 
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_hol_caved_to_the_british
 			modifier = {
 				production_oil_factor = -0.25
 				local_resources_factor = -0.25
@@ -144,7 +131,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_generic_refining_concern_1
 			modifier = {
 				production_oil_factor = 0.1
 				local_resources_factor = 0.1
@@ -155,7 +142,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_generic_refining_concern_1
 			modifier = {
 				production_oil_factor = 0.2
 				local_resources_factor = 0.1
@@ -166,7 +153,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_SOV_atomic_bomb_project
 			modifier = {
 				production_oil_factor = -0.10
 				local_resources_factor = -0.10
@@ -178,7 +165,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_SOV_atomic_bomb_project
 			modifier = {
 				production_oil_factor = 0.05
 				local_resources_factor = 0.05
@@ -187,10 +174,9 @@ ideas = {
 		}
 
 		IRQ_sanctions_against_ENG = {
-			picture = chi_hyper_inflation
+			picture = idea_EST_democratic_opposition
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
-			ROOT = { has_war_with = ENG }
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.05 
@@ -198,34 +184,11 @@ ideas = {
 			}
 		}
 
-		IRQ_Ban_commonwealth_trading = { 
-			allowed = { always = no }
-			allowed_civil_war = { always = yes }
-			removal_cost = -1
-			picture = saf_ossewabrandwag
-			targeted_modifier = {
-				tag = GER
-				trade_cost_for_target_factor = -0.50
-			}	 
-		}
-
-		IRQ_Welcome_commonwealth_trading = { 
-			allowed = { always = no }
-			removal_cost = -1
-			picture = saf_ossewabrandwag
-			modifier = {
-				production_oil_factor = 0.1
-				local_resources_factor = 0.1
-				stability_factor = 0.1
-				conscription_factor = 0.05
-			 } 
-		}
-
 		IRQ_Military_Studies = { 
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_tur_etatism_bonus
 			modifier = {
 				stability_factor = -0.1
 				political_power_factor = -0.1
@@ -241,13 +204,13 @@ ideas = {
 		}
 
 		IRQ_Military_Studies_2 = {
-		allowed = { always = no }
+			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_jap_supremacy_of_will
 			modifier = {
-				stability_factor = -0.05
-				political_power_factor = -0.05
+				stability_factor = 0.05
+				political_power_factor = 0.05
 			}
 			research_bonus = {
 				industry = -0.15
@@ -263,7 +226,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_jap_supremacy_of_will
 			modifier = {
 				stability_factor = 0.1
 				political_power_factor = 0.1
@@ -282,7 +245,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_jap_supremacy_of_will
 			modifier = {
 				stability_factor = 0.1
 				political_power_factor = 0.1
@@ -301,7 +264,7 @@ ideas = {
 			allowed = { always = no }
 			allowed_civil_war = { always = yes }
 			removal_cost = -1
-			picture = saf_ossewabrandwag
+			picture = idea_SOV_fourth_five_year_plan
 			modifier = {
 				war_support_weekly = 0.0035
 				stability_weekly = 0.001
@@ -313,7 +276,7 @@ ideas = {
 		}
 
 		IRQ_The_Spirit_of_Iraq_in_Defense  = {
-			picture = generic_fascism_drift_2
+			picture = idea_tur_kemalist_neutrality
 			available = { original_tag = IRQ }
 			removal_cost = -1
 			modifier = {
@@ -324,7 +287,7 @@ ideas = {
 		}
 
 		IRQ_One_Body  = {
-			picture = generic_fascism_drift_2
+			picture = spr_masters_of_our_own_fate
 			available = { original_tag = IRQ }
 			removal_cost = -1
 			modifier = {
@@ -336,7 +299,7 @@ ideas = {
 		}
 
 		IRQ_Arab_Horse  = {
-			picture = generic_fascism_drift_2
+			picture = idea_generic_motorized_equipment_manufacturer_2
 			available = { original_tag = IRQ }
 			removal_cost = -1
 			modifier = {
@@ -346,7 +309,7 @@ ideas = {
 		}
 
 		IRQ_Iraq_Army  = {
-			picture = generic_fascism_drift_2
+			picture = idea_tur_ottoman_spirit
 			available = { original_tag = IRQ }
 			removal_cost = -1
 			modifier = {
@@ -356,7 +319,7 @@ ideas = {
 		}
 
 		IRQ_Desert_Castle  = {
-			picture = generic_fascism_drift_2
+			picture = idea_generic_fortify_the_borders
 			available = { original_tag = IRQ }
 			removal_cost = -1
 			modifier = {
@@ -366,7 +329,7 @@ ideas = {
 		}
 
 		IRQ_Expanded_Axis_Oil_Trade = {
-			picture = generic_constitutional_guarantees
+			picture = idea_ast_abandon_the_westminster_system_fascism
 			removal_cost = -1
 			allowed = { original_tag = IRQ }
 			modifier = {

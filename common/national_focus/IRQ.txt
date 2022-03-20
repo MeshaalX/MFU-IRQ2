@@ -10,12 +10,12 @@ focus_tree = {
 		}
 	}
 
-	continuous_focus_position = { x = 2000 y = 1000 }
+	continuous_focus_position = { x = 900 y = 2300 }
 	default = no
 
 	focus = {
 		id = IRQ_Civil_War
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_focus_TUR_support_the_golden_square
 		x = 12
 		y = 0
 		cost = 10
@@ -96,6 +96,14 @@ focus_tree = {
 						}
 						create_unit = { 
 						division = "name = \"11. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"12. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
+						owner = PREV
+						}
+						create_unit = { 
+						division = "name = \"13. Yassin Al-Hashemi forces\" division_template = \"Yassin Al-Hashemi forces\" start_experience_factor = 0" 
 						owner = PREV
 						}
 					}
@@ -260,7 +268,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Left_1
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_generic_demand_territory
 		prerequisite = { focus = IRQ_Left_Side }
 		x = 11
 		y = 2
@@ -285,7 +293,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Right_1
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_USA_30_second_response_timer
 		prerequisite = { focus = IRQ_Right_Side }
 		x = 13
 		y = 2
@@ -305,7 +313,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Left_2_1
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_focus_spa_save_the_alcazar
 		prerequisite = { focus = IRQ_Left_1 }
 		x = 10
 		y = 3
@@ -325,7 +333,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Left_2_2
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_generic_housing
 		prerequisite = { focus = IRQ_Left_1 }
 		x = 8
 		y = 3
@@ -358,7 +366,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Right_2_1
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_generic_agriculture
 		prerequisite = { focus = IRQ_Right_1 }
 		x = 14
 		y = 3
@@ -396,7 +404,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Right_2_2
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_generic_road2
 		prerequisite = { focus = IRQ_Right_1 }
 		x = 16
 		y = 3
@@ -421,7 +429,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Left_3
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_tripartite_pact
 		prerequisite = { focus = IRQ_Left_1 }
 		prerequisite = { focus = IRQ_Left_2_1 }
 		x = 11
@@ -446,7 +454,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Right_3
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_generic_control_the_radio
 		prerequisite = { focus = IRQ_Right_1 }
 		prerequisite = { focus = IRQ_Right_2_1 }
 		x = 13
@@ -474,7 +482,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Left_3_1
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_generic_radar
 		prerequisite = { focus = IRQ_Left_2_1 }
 		prerequisite = { focus = IRQ_Left_2_2 }
 		x = 9
@@ -499,7 +507,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Left_3_2
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_generic_national_unity
 		prerequisite = { focus = IRQ_Left_2_2 }
 		x = 7
 		y = 4
@@ -517,7 +525,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Right_3_1
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_generic_censorship
 		prerequisite = { focus = IRQ_Right_2_1 }
 		prerequisite = { focus = IRQ_Right_2_2 }
 		x = 15
@@ -569,7 +577,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Left_4
-		icon = GFX_focus_chi_mission_to_germany
+		icon = GFX_goal_generic_production2
 		prerequisite = { focus = IRQ_Left_3 }
 		prerequisite = { focus = IRQ_Left_3_1 }
 		prerequisite = { focus = IRQ_Left_3_2 }
@@ -602,7 +610,7 @@ focus_tree = {
 		ai_will_do = { factor = 1 }
 		prerequisite = { focus = IRQ_Left_3 focus = IRQ_Right_3 }
 		x = 12
-		y = 5
+		y = 6
 		cost = 5
 		available_if_capitulated = no
 		available = { 
@@ -627,7 +635,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Right_4
-		icon = GFX_focus_chi_british_cooperation
+		icon = GFX_goal_generic_state_economy
 		prerequisite = { focus = IRQ_Right_3 }
 		prerequisite = { focus = IRQ_Right_3_1 }
 		prerequisite = { focus = IRQ_Right_3_2 }
@@ -651,7 +659,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Technologies_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_CAN_montreal_lab
 		prerequisite = { focus = IRQ_End_Civil_War_1936 }
 		x = 12
 		y = 7
@@ -669,7 +677,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Technologies_left_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_USA_improve_teething
 		prerequisite = { focus = IRQ_Technologies_1 }
 		mutually_exclusive = { focus = IRQ_Technologies_Right_1 }
 		x = 11
@@ -687,7 +695,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Technologies_Right_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_r56_CAN_industry
 		prerequisite = { focus = IRQ_Technologies_1 }
 		mutually_exclusive = { focus = IRQ_Technologies_left_1 }
 		x = 13
@@ -704,7 +712,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Technologies_left_2
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_CAN_ram_tank
 		prerequisite = { focus = IRQ_Technologies_left_1 }
 		x = 11
 		y = 9
@@ -721,7 +729,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Technologies_Right_2
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_light_industry
 		prerequisite = { focus = IRQ_Technologies_Right_1 }
 		x = 13
 		y = 9
@@ -738,7 +746,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Social_Situation_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_FRA_confederation_of_french_workers
 		prerequisite = { focus = IRQ_End_Civil_War_1936}
 		x = 16
 		y = 7
@@ -767,7 +775,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Social_Situation_left_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_FRA_national_state_market_fund
 		prerequisite = { focus = IRQ_Social_Situation_1 }
 		mutually_exclusive = { focus = IRQ_Social_Situation_Right_1 }
 		x = 15
@@ -785,7 +793,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Social_Situation_Right_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_italy_increase_settlements_in_eritrea
 		prerequisite = { focus = IRQ_Social_Situation_1 }
 		mutually_exclusive = { focus = IRQ_Social_Situation_left_1 }
 		x = 17
@@ -803,7 +811,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Social_Situation_left_2
-		icon = GFX_GER_endless_offensives
+		icon = GFX_FRA_matignon_agreements
 		prerequisite = { focus = IRQ_Social_Situation_left_1 }
 		x = 15
 		y = 9
@@ -820,7 +828,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Social_Situation_Right_2
-		icon = GFX_GER_endless_offensives
+		icon = GFX_SLO_deport_undesirables
 		prerequisite = { focus = IRQ_Social_Situation_Right_1 }
 		x = 17
 		y = 9
@@ -837,7 +845,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Baghdad_University_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_housing
 		prerequisite = { focus = IRQ_End_Civil_War_1936}
 		x = 8
 		y = 7
@@ -854,7 +862,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Count_on_the_oil_seekers_left_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_excavation_equipment
 		prerequisite = { focus = IRQ_Baghdad_University_1 }
 		mutually_exclusive = { focus = IRQ_Specialists_from_Germany_Right_1 }
 		x = 7
@@ -870,7 +878,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Specialists_from_Germany_Right_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_construction3
 		prerequisite = { focus = IRQ_Baghdad_University_1 }
 		mutually_exclusive = { focus = IRQ_Count_on_the_oil_seekers_left_1 }
 		x = 9
@@ -888,7 +896,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Count_on_the_oil_seekers_left_2
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = IRQ_Count_on_the_oil_seekers_left_1 }
 		x = 7
 		y = 9
@@ -905,7 +913,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Specialists_from_Germany_Right_2
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_construction_tools
 		prerequisite = { focus = IRQ_Specialists_from_Germany_Right_1 }
 		x = 9
 		y = 9
@@ -922,7 +930,7 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Finially_Step_in_Social_Situation_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_radio_development
 		prerequisite = { focus = IRQ_Social_Situation_left_2 focus = IRQ_Social_Situation_Right_2}
 		x = 16
 		y = 10
@@ -930,12 +938,17 @@ focus_tree = {
 		available_if_capitulated = no
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			add_tech_bonus = {
+				bonus = 0.75
+				uses = 3
+				category = electronics
+			}
 		}
 	}
 
 	focus = {
 		id = IRQ_Finially_Step_in_West_Technologies_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_radio_development_2
 		prerequisite = { focus = IRQ_Technologies_left_2 focus = IRQ_Technologies_Right_2}
 		x = 12
 		y = 10
@@ -943,12 +956,18 @@ focus_tree = {
 		available_if_capitulated = no
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			add_tech_bonus = {
+				name = support_companies
+				Bonus = 0.75
+				uses = 3
+				category = support_tech
+			}
 		}
 	}
 
 	focus = {
 		id = IRQ_Finially_Step_in_Baghdad_University_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_wheat
 		prerequisite = { focus = IRQ_Count_on_the_oil_seekers_left_2 focus = IRQ_Specialists_from_Germany_Right_2 }
 		x = 8
 		y = 10
@@ -956,12 +975,22 @@ focus_tree = {
 		available_if_capitulated = no
 		ai_will_do = { factor = 1 }
 		completion_reward = {
+			add_tech_bonus = {
+				name = construction_tech_bonus
+				bonus = 0.75
+				uses = 3
+				technology = excavation1
+				technology = excavation2
+				technology = excavation3
+				technology = excavation4
+				technology = excavation5
+			}
 		}
 	}
 
 	focus = {
 		id = IRQ_New_Iraq_1
-		icon = GFX_GER_endless_offensives
+		icon = GFX_focus_TUR_support_the_golden_square
 		prerequisite = { focus = IRQ_Finially_Step_in_Social_Situation_1 }
 		prerequisite = { focus = IRQ_Finially_Step_in_West_Technologies_1 }
 		prerequisite = { focus = IRQ_Finially_Step_in_Baghdad_University_1 }
@@ -979,14 +1008,13 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Basra_Airport 
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_airport
 		prerequisite = { focus = IRQ_New_Iraq_1 }
 		x = 14
 		y = 13
 		cost = 10
 		available_if_capitulated = no
 		available = { date > 1938.3.24 }
-		IRQ = {	controls_state = 676 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			random_owned_controlled_state = {
@@ -1007,14 +1035,13 @@ focus_tree = {
 
 	focus = {
 		id = IRQ_Order_No._38
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_road
 		prerequisite = { focus = IRQ_New_Iraq_1 }
 		x = 10
 		y = 13
 		cost = 10
 		available_if_capitulated = no
 		available = { date > 1938.1.1 }
-		IRQ = {	controls_state = 676 }
 		ai_will_do = { factor = 1 }
 		completion_reward = {
 			every_state = {
@@ -1033,7 +1060,7 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_Unclear_Focus_for_Our_Army
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_axis_build_infantry
 		prerequisite = { focus = IRQ_New_Iraq_1 }
 		x = 20
 		y = 13
@@ -1054,18 +1081,18 @@ focus_tree = {
 				tech_mountaineers2 = 1
 				tech_special_forces = 1
 			}
-			army_experience = 50
+			army_experience = 75
 		}
 	}
 
 	focus = {  
 		id = IRQ_Mass_MOB_1
-		icon = r56_goal_generic_camelry
+		icon = GFX_focus_spr_masters_of_our_own_fate
 		prerequisite = { focus = IRQ_Unclear_Focus_for_Our_Army }
 		mutually_exclusive = { focus = IRQ_GBI_1 }
 		x = 23
 		y = 14
-		cost = 10
+		cost = 5
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
 			set_technology = { pack_artillery2 = 1 }
@@ -1088,16 +1115,16 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_GBI_1
-		icon = r56_goal_generic_german_assistance
+		icon = GFX_goal_generic_into_fire
 		prerequisite = { focus = IRQ_Unclear_Focus_for_Our_Army }
 		mutually_exclusive = { focus = IRQ_Mass_MOB_1 }
 		x = 17
 		y = 14
-		cost = 10
+		cost = 5
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
 			set_technology = { pack_artillery2 = 1 }
-			army_experience = 50
+			army_experience = 75
 			add_tech_bonus = {
 				bonus = 0.5
 				uses = 2
@@ -1115,54 +1142,54 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_Arab_Horse
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_cavalry
 		prerequisite = { focus = IRQ_Mass_MOB_1 }
 		x = 23
 		y = 15
 		cost = 10
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
-			army_experience = 50
+			army_experience = 75
 			add_ideas = IRQ_Arab_Horse
 		}
 	}
 
 	focus = {  
 		id = IRQ_Iraq_Army
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_desert_warfare
 		prerequisite = { focus = IRQ_Mass_MOB_1 focus = IRQ_GBI_1}
 		x = 20
 		y = 15
 		cost = 5
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
-			army_experience = 50
+			army_experience = 75
 			add_ideas = IRQ_Iraq_Army
 		}
 	}
 
 	focus = {  
 		id = IRQ_Desert_Castle
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_army
 		prerequisite = { focus = IRQ_GBI_1 }
 		x = 17
 		y = 15
 		cost = 10
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
-			army_experience = 50
+			army_experience = 75
 			add_ideas = IRQ_Desert_Castle
 		}
 	}
 
 	focus = {  
 		id = IRQ_Kut_Barrage
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_italy_expand_hydroelectricity_production
 		prerequisite = { focus = IRQ_New_Iraq_1 }
-		available = { date > 1939.3.29 }
+		available = { date > 1939.2.25 }
 		x = 12
 		y = 13
-		cost = 0.6
+		cost = 5
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
 			add_political_power = 50
@@ -1172,7 +1199,7 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_Anglo-Iraqi_War
-		icon = r56_goal_generic_camelry
+		icon = GFX_goal_generic_backstab
 		prerequisite = { focus = IRQ_King's_Car_Accident  }
 		mutually_exclusive = { focus = IRQ_UK_Killed_Ghazi_I }
 		available = { 
@@ -1187,7 +1214,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
-				uses = 1
+				uses = 3
 				category = land_doctrine
 			}
 			GER = { country_event = generic.2 }
@@ -1205,7 +1232,7 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_UK_Killed_Ghazi_I
-		icon = r56_goal_generic_german_assistance
+		icon = GFX_focus_attack_britain
 		prerequisite = { focus = IRQ_King's_Car_Accident  }
 		mutually_exclusive = { focus = IRQ_Anglo-Iraqi_War}
 		available = { 
@@ -1221,7 +1248,7 @@ focus_tree = {
 			add_doctrine_cost_reduction = {
 				name = land_doc_bonus
 				cost_reduction = 0.5
-				uses = 2
+				uses = 1
 				category = land_doctrine
 			}
 			GER = { country_event = generic.2 }
@@ -1230,12 +1257,12 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_King's_Car_Accident 
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_army_purges
 		prerequisite = { focus = IRQ_Kut_Barrage }
-		available = { date > 1939.4.4 }
+		available = { date > 1939.3.27 }
 		x = 12
 		y = 14
-		cost = 0.4
+		cost = 1
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
 			retire_country_leader = yes
@@ -1251,16 +1278,29 @@ focus_tree = {
 	}
 
 	focus = {  
+		id = IRQ_Berlin_Arabic_Radio 
+		icon = GFX_goal_generic_radar
+		prerequisite = { focus = IRQ_King's_Car_Accident }
+		available = { date > 1939.4.4 }
+		x = 12
+		y = 16
+		cost = 1
+		ai_will_do = { factor = 12 }
+		completion_reward = { 
+			add_stability = 0.05
+		}
+	}
+
+	focus = {  
 		id = IRQ_5
 		icon = GFX_GER_endless_offensives
 		prerequisite = { focus = IRQ_UK_Killed_Ghazi_I}
 		x = 10
 		y = 16
-		cost = 10
+		cost = 5
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
-			army_experience = 50
-			add_ideas = IRQ_Iraq_Army
+			add_political_power = 50
 		}
 	}
 
@@ -1270,17 +1310,17 @@ focus_tree = {
 		prerequisite = { focus = IRQ_Anglo-Iraqi_War }
 		x = 14
 		y = 16
-		cost = 10
+		cost = 5
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
-			army_experience = 50
-			add_ideas = IRQ_Desert_Castle
+			army_experience = 100
+			add_political_power = 50
 		}
 	}
 
 	focus = {  
 		id = IRQ_New_Oil
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_construction2
 		prerequisite = { focus = IRQ_New_Iraq_1 }
 		x = 5
 		y = 13
@@ -1302,7 +1342,7 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_Synthetic_Oil
-		icon = r56_goal_generic_camelry
+		icon = GFX_goal_oil
 		prerequisite = { focus = IRQ_New_Oil }
 		mutually_exclusive = { focus = IRQ_Infrastructure }
 		x = 2
@@ -1320,7 +1360,7 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_Infrastructure
-		icon = r56_goal_generic_german_assistance
+		icon = GFX_goal_italy_increase_marble_production
 		prerequisite = { focus = IRQ_New_Oil }
 		mutually_exclusive = { focus = IRQ_Synthetic_Oil }
 		x = 8
@@ -1338,7 +1378,7 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_10
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = IRQ_New_Oil }
 		x = 6
 		y = 15
@@ -1349,10 +1389,10 @@ focus_tree = {
 				prioritize = { 676 }
 				add_building_construction = {
 					type = fuel_silo
-					level = 1
+					level = 2
 					instant_build = yes
 				}
-			add_extra_state_shared_building_slots = 1
+			add_extra_state_shared_building_slots = 2
 			}
 			random_owned_controlled_state = {
 				prioritize = { 675 }
@@ -1368,7 +1408,7 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_11
-		icon = GFX_GER_endless_offensives
+		icon = GFX_goal_italy_expand_libyan_manufactures
 		prerequisite = { focus = IRQ_New_Oil}
 		x = 4
 		y = 15
@@ -1407,7 +1447,7 @@ focus_tree = {
 
 	focus = {  
 		id = IRQ_Expanded_Axis_Oil_Trade
-		icon = GFX_GER_endless_offensives
+		icon = GFX_GOAL_mode_of_production
 		prerequisite = { focus = IRQ_New_Oil }
 		prerequisite = { focus = IRQ_10 }
 		prerequisite = { focus = IRQ_11 }

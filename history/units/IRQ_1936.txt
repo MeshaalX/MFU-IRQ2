@@ -16,10 +16,10 @@
 		light_infantry = { x = 2 y = 1 }
 		light_infantry = { x = 2 y = 2 }
 
-		artillery_brigade = { x = 3 y = 0 }
-		artillery_brigade = { x = 3 y = 1 }
-		artillery_brigade = { x = 3 y = 2 }
-		artillery_brigade = { x = 3 y = 3 }
+		pack_artillery_brigade = { x = 3 y = 0 }
+		pack_artillery_brigade = { x = 3 y = 1 }
+		pack_artillery_brigade = { x = 3 y = 2 }
+		pack_artillery_brigade = { x = 3 y = 3 }
 	}
 	support = {
 		DIV_HQ = { x = 0 y = 0 }
@@ -72,58 +72,57 @@ units = {
 		name = "1 Alfurqat"
 		location = 2097
 		division_template = "Alfurqat Almasha"	
-		start_experience_factor = 0.3
-		
+		start_experience_factor = 0.3		
 	}
+
 	division = {
 		name = "2 Alfurqat"
 		location = 2097
 		division_template = "Alfurqat Almasha"	
 		start_experience_factor = 0.3
-		
 	}
+
 	division = {
 		name = "3 Alfurqat"
 		location = 2097
 		division_template = "Alfurqat Almasha"	
-		start_experience_factor = 0.3
-		
+		start_experience_factor = 0.3		
 	}
+
 	division = {
 		name = "4 Alfurqat"
 		location = 2097
 		division_template = "Alfurqat Almasha"	
-		start_experience_factor = 0.3
-		
+		start_experience_factor = 0.3		
 	}
+
 	division = {
 		name = "5 Alfurqat"
 		location = 10106
 		division_template = "Alfurqat Aljabalia"	
-		start_experience_factor = 0.3
-		
+		start_experience_factor = 0.3		
 	}
+
 	division = {
 		name = "6 Alfurqat"
 		location = 10106
 		division_template = "Alfurqat Aljabalia"	
-		start_experience_factor = 0.3
-		
+		start_experience_factor = 0.3		
 	}
+
 	division = {
 		name = "7 Alfurqat"
 		location = 10106
 		division_template = "Alfurqat Aljabalia"	
-		start_experience_factor = 0.3
-		
+		start_experience_factor = 0.3		
 	}
+
 	division = {
 		name = "8 Alfurqat"
 		location = 2097
 		division_template = "Alfurqat Almasha"	
-		start_experience_factor = 0.3
-		
-	}
+		start_experience_factor = 0.3		
+	}	
 }
 #### Production ####
 instant_effect = {
@@ -135,6 +134,5 @@ instant_effect = {
 		requested_factories = 6
 		progress = 0.22
 		efficiency = 100
-	}
-	
+	}	
 }
