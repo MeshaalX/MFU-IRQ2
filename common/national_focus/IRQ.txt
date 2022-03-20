@@ -1095,7 +1095,10 @@ focus_tree = {
 		cost = 5
 		ai_will_do = { factor = 12 }
 		completion_reward = { 
-			set_technology = { pack_artillery2 = 1 }
+			set_technology = { 
+				pack_artillery2 = 1
+				human_wave_offensive = 1 
+			}
 			army_experience = 50
 			add_tech_bonus = {
 				bonus = 0.5
