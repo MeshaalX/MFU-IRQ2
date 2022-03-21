@@ -991,9 +991,8 @@ focus_tree = {
 	focus = {
 		id = IRQ_New_Iraq_1
 		icon = GFX_focus_TUR_support_the_golden_square
-		prerequisite = { focus = IRQ_Finially_Step_in_Social_Situation_1 }
+		prerequisite = { focus = IRQ_Finially_Step_in_Social_Situation_1 focus = IRQ_Finially_Step_in_Baghdad_University_1 }
 		prerequisite = { focus = IRQ_Finially_Step_in_West_Technologies_1 }
-		prerequisite = { focus = IRQ_Finially_Step_in_Baghdad_University_1 }
 		x = 12
 		y = 12
 		cost = 10
@@ -1094,6 +1093,13 @@ focus_tree = {
 		y = 14
 		cost = 5
 		ai_will_do = { factor = 12 }
+		available = {
+			NOT = {
+				has_tech = mobile_warfare 
+				has_tech = superior_firepower
+				has_tech = trench_warfare 
+			}
+		}
 		completion_reward = { 
 			set_technology = { 
 				pack_artillery2 = 1
@@ -1125,6 +1131,13 @@ focus_tree = {
 		y = 14
 		cost = 5
 		ai_will_do = { factor = 12 }
+		available = {
+			NOT = {
+				has_tech = mobile_warfare 
+				has_tech = superior_firepower
+				has_tech = mass_assault 
+			}
+		}
 		completion_reward = { 
 			set_technology = { pack_artillery2 = 1 }
 			army_experience = 75

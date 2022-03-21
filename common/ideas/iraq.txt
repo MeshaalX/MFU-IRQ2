@@ -180,7 +180,7 @@ ideas = {
 			removal_cost = -1
 			modifier = {
 				stability_factor = -0.05 
-				min_export = 0.05 
+				min_export = 0.1 
 			}
 		}
 
