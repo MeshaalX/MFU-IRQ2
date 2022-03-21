@@ -1308,7 +1308,7 @@ focus_tree = {
 	}
 
 	focus = {  
-		id = IRQ_5
+		id = IRQ_Higher_Morale
 		icon = GFX_GER_endless_offensives
 		prerequisite = { focus = IRQ_UK_Killed_Ghazi_I}
 		x = 10
@@ -1321,7 +1321,7 @@ focus_tree = {
 	}
 
 	focus = {  
-		id = IRQ_6
+		id = IRQ_Lower_Morale
 		icon = GFX_GER_endless_offensives
 		prerequisite = { focus = IRQ_Anglo-Iraqi_War }
 		x = 14
@@ -1393,7 +1393,7 @@ focus_tree = {
 	}
 
 	focus = {  
-		id = IRQ_10
+		id = IRQ_Fuel_Silo
 		icon = GFX_goal_generic_oil_refinery
 		prerequisite = { focus = IRQ_New_Oil }
 		x = 6
@@ -1423,7 +1423,7 @@ focus_tree = {
 	}
 
 	focus = {  
-		id = IRQ_11
+		id = IRQ_Iraq_
 		icon = GFX_goal_italy_expand_libyan_manufactures
 		prerequisite = { focus = IRQ_New_Oil}
 		x = 4
