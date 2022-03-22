@@ -74,6 +74,30 @@ characters={
 		}
 	}
 
+	IRQ_Nuri_Al-Said={
+		name="Nuri Al-Said"
+		advisor={
+			slot = political_advisor
+			idea_token = Nuri_Al-Said
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { silent_workhorse }
+		}
+	}
+
+	IRQ_Younes_El_Sabawy={
+		name="Younes El Sabawy"
+		advisor={
+			slot = political_advisor
+			idea_token = Younes_El_Sabawy
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { smooth_talking_charmer }
+		}
+	}
+
 	IRQ_Bakr_Sidqi={
 		name="Bakr Sidqi"
 		advisor={
@@ -87,10 +111,10 @@ characters={
 		}
 		portraits={
 			army={ small="GFX_idea_SAU_generic_land_3" }
-			army={ large="gfx/leaders/ITA/portrait_italy_pietro_badoglio.dds" }
+			army={ large="gfx/leaders/IRQ/Bakr_Sidqi.dds" }
 		}
 		field_marshal={
-			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine }
+			traits={ old_guard inflexible_strategist politically_connected defensive_doctrine desert_fox}
 			skill=2
 			attack_skill=1
 			defense_skill=2
@@ -99,4 +123,95 @@ characters={
 			legacy_id=-1
 		}
 	}
+
+	IRQ_Kamil_Shabib={
+		name="Kamil Shabib"
+		advisor={
+			slot = high_command
+			idea_token = Kamil_Shabib
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { army_infantry_2 }
+		}
+		portraits={
+			army={ small="GFX_idea_SAU_generic_land_2" }
+			army={ large="gfx/leaders/IRQ/Kamil_Shabib.dds" }
+		}
+		corps_commander={
+			traits={ politically_connected desert_fox}
+			skill=1
+			attack_skill=2
+			defense_skill=2
+			planning_skill=1
+			logistics_skill=1
+			legacy_id=-2
+		}
+	}
+
+	IRQ_Fahmi_Said={
+		name="Fahmi Said"
+		advisor={
+			slot = high_command
+			idea_token = Fahmi_Said
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { army_chief_maneuver_3 }
+		}
+		portraits={
+			army={ small="GFX_idea_SAU_generic_land_3" }
+			army={ large="gfx/leaders/IRQ/Fahmi_Said.dds" }
+		}
+		corps_commander={
+			traits={ cavalry_officer cavalry_leader desert_fox}
+			skill=2
+			attack_skill=2
+			defense_skill=1
+			planning_skill=1
+			logistics_skill=3
+			legacy_id=-3
+		}
+	}
+
+	IRQ_Salah_Al-Din_Al-Sabbagh={
+		name="Salah Al-Din Al-Sabbagh"
+		advisor={
+			slot = high_command
+			idea_token = Salah_Al-Din_Al-Sabbagh
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { army_regrouping_1 }
+		}
+		portraits={
+			army={ small="GFX_idea_ENG_thomas_jacomb_hutton" }
+			army={ large="gfx/leaders/IRQ/Salah_Al-Din_Al-Sabbagh.dds" }
+		}
+		corps_commander={
+			traits={ bearer_of_artillery trickster}
+			skill=1
+			attack_skill=2
+			defense_skill=1
+			planning_skill=2
+			logistics_skill=2
+			legacy_id=-4
+		}
+	}
+
+	IRQ_Mahmud_Salman={
+		name="Mahmud Salman"
+		advisor={
+			slot = air_chief
+			idea_token = Mahmud_Salman
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { air_chief_all_weather_2 }
+		}
+		portraits={
+			army={ small="GFX_idea_SAU_generic_land_1" }
+		}
+	}
+
 }
