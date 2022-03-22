@@ -235,9 +235,9 @@ ideas = {
 				industry = 0.15
 				infantry_weapons = 0.1
 				artillery = 0.1
-				armor = -1.0
-				naval_equipment = -1.0
-				air_equipment = -1.0
+				armor = -0.5
+				naval_equipment = -0.5
+				air_equipment = -0.5
 			}
 		}
 
@@ -254,9 +254,9 @@ ideas = {
 				industry = 0.2
 				infantry_weapons = 0.2
 				artillery = 0.1
-				armor = -0.2
-				naval_equipment = -0.2
-				air_equipment = -0.2
+				armor = 0.05
+				naval_equipment = 0.05
+				air_equipment = 0.05
 			}
 		}
 
@@ -313,8 +313,8 @@ ideas = {
 			available = { original_tag = IRQ }
 			removal_cost = -1
 			modifier = {
-				heat_attrition_factor = -0.15
-				acclimatization_hot_climate_gain_factor = 0.1
+				heat_attrition_factor = -0.2
+				acclimatization_hot_climate_gain_factor = 0.2
 			}							
 		}
 

@@ -1,5 +1,5 @@
 operations = {
-		IRQ_expand_home_industry = {
+		IRQ_Home_Defence = {
 		icon = generic_construction
 		available = { 
 			tag = IRQ
@@ -7,13 +7,15 @@ operations = {
 		}
 		visible = { NOT = { has_war_with = ENG } }
 		ai_will_do = { factor = 0 }
-		custom_cost_text = ENG_200_british_money 
-		days_remove = 90
-		days_re_enable = 90
+		days_remove = 180
+		days_re_enable = 180
 		fire_only_once = no
 		modifier = { 
-			production_speed_industrial_complex_factor = 0.1
-			stability_factor = -0.10
+			production_speed_bunker_factor = 0.20
+			production_speed_coastal_bunker_factor = 0.20
+			production_speed_anti_air_building_factor = 0.20
+			production_speed_radar_station_factor = 0.20
+			stability_factor = -0.20
 		}
 	}
 }	
