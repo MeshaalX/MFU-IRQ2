@@ -1252,7 +1252,7 @@ focus_tree = {
 		prerequisite = { focus = IRQ_King's_Car_Accident  }
 		mutually_exclusive = { focus = IRQ_Anglo-Iraqi_War}
 		available = { 
-			date > 1939.10.1
+			date > 1940.1.1
 			date < 1940.3.29
 		}
 		x = 10
@@ -1423,7 +1423,7 @@ focus_tree = {
 	}
 
 	focus = {  
-		id = IRQ_Iraq_
+		id = IRQ_Iraq_Infrastructure
 		icon = GFX_goal_italy_expand_libyan_manufactures
 		prerequisite = { focus = IRQ_New_Oil}
 		x = 4
@@ -1464,9 +1464,8 @@ focus_tree = {
 	focus = {  
 		id = IRQ_Expanded_Axis_Oil_Trade
 		icon = GFX_GOAL_mode_of_production
-		prerequisite = { focus = IRQ_New_Oil }
-		prerequisite = { focus = IRQ_10 }
-		prerequisite = { focus = IRQ_11 }
+		prerequisite = { focus = IRQ_Fuel_Silo }
+		prerequisite = { focus = IRQ_Iraq_Infrastructure }
 		x = 5
 		y = 16
 		cost = 10

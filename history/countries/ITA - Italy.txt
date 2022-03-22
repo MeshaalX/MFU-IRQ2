@@ -150,7 +150,7 @@ set_technology = { #player
 	        axis_basic_tank_engines = 1
 	        axis_rivetted_armour = 1
 		}
-	
+
     }
 if = {
 	limit = {

@@ -1,4 +1,4 @@
-﻿l_english:
+l_english:
 
 
 
@@ -2391,10 +2391,6 @@
  IRQ_UK_Steal_Iraq_Oil_desc:0 "Britain exploits Iraq oil at the lowest prices."
  IRQ_Military_Studies:0 "Military Studies"
  IRQ_Military_Studies_desc:0 "Iraq needs more scientists specializing in weapons. However, Iraq doesn't have them yet."
- IRQ_Ban_commonwealth_trading:0 "Ban Commonwealth"
- IRQ_Ban_commonwealth_trading_desc:0 "Ban Commonwealth."
- IRQ_Welcome_commonwealth_trading:0 "Welcome Commonwealth"
- IRQ_Welcome_commonwealth_trading_desc:0 "Welcome Commonwealth."
  IRQ_sanctions_against_ENG_:0 "Iraq Sanctions Against Englind" 
  IRQ_sanctions_against_ENG_desc:0:0 "Welcome Commonwealth"
  ARG_generic_fascist_demagogue:0 "Carlos Alberto Pueyrredon"
