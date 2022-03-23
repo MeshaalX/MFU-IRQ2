@@ -20,6 +20,11 @@ recruit_character = IRQ_Salah_Al-Din_Al-Sabbagh
 recruit_character = IRQ_Mahmud_Salman
 recruit_character = IRQ_Nuri_Al-Said
 recruit_character = IRQ_Younes_El_Sabawy
+recruit_character = IRQ_Abu_Al-Jamouh
+recruit_character = IRQ_0kib1
+recruit_character = IRQ_kwqzx
+recruit_character = IRQ_Hakam
+recruit_character = IRQ_Yousuf
 
 add_ideas = {
 	IRQ_Naval

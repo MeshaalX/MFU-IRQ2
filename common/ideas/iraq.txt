@@ -338,15 +338,22 @@ ideas = {
 				production_speed_buildings_factor = 0.1							
 			}
 		}
-
-			theorist_production = {
-			IRQ_nuri_as_said = {
-
-				picture = generic_political_advisor_arab_1
-				
-				allowed = { original_tag = IRQ }
-				traits = { armaments_organizer }
-			}	
-		}
 	}
+		theorist_production = {
+			IRQ_Hakam = {
+			picture = generic_political_advisor_arab_1
+			allowed = { original_tag = IRQ }
+			traits = { armaments_organizer }
+			}
+			IRQ_kwqzx = {
+			picture = generic_political_advisor_europe_1
+			allowed = { original_tag = IRQ }			
+			traits = { war_industrialist }
+			}
+			IRQ_YoOoUSEF4EVER = {
+			picture = generic_political_advisor_europe_1
+			allowed = { original_tag = IRQ }			
+			traits = { captain_of_industry }
+			}	
+		}	
 }

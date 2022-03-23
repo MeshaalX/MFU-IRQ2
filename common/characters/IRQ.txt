@@ -98,6 +98,34 @@ characters={
 		}
 	}
 
+	IRQ_Abu_Al-Jamouh ={
+		name="Abu Al-Jamouh"
+		advisor={
+			slot = theorist
+			idea_token = Abu_Al-Jamouh
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 250.000
+			traits  = { grand_battle_plan_expert }
+			available  = { has_completed_focus  = IRQ_GBI_1 }
+		}
+		portraits={ army={ small="GFX_idea_philippe_leclerc" } }
+	}
+
+	IRQ_0kib1={
+		name="0kib1"
+		advisor={
+			slot = theorist
+			idea_token = 0kib1
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 250.000
+			traits  = { mass_assault_expert }
+			available  = { has_completed_focus  = IRQ_Mass_MOB_1 }
+		}
+		portraits={ army={ small="GFX_idea_OMA_said_bin_taimur" } }
+	}
+
 	IRQ_Bakr_Sidqi={
 		name="Bakr Sidqi"
 		advisor={
@@ -199,6 +227,45 @@ characters={
 		}
 	}
 
+	IRQ_kwqzx={
+		name="kwqzx"
+		advisor={
+			slot = high_command
+			idea_token = kwqzx
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { army_cavalry_1 }
+		}
+		portraits={ army={ small="GFX_idea_RAJ_political_leader_generic" } }
+	}
+
+	IRQ_Hakam={
+		name="Hakam"
+		advisor={
+			slot = high_command
+			idea_token = Hakam
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { army_concealment_1 }
+		}
+		portraits={ army={ small="GFX_idea_SOV_metropolitan_aleksy" } }
+	}
+
+	IRQ_Yousuf={
+		name="Yousuf"
+		advisor={
+			slot = high_command
+			idea_token = Yousuf
+			ai_will_do  = { factor  = 1.000 }
+			allowed  = { original_tag  = IRQ }
+			cost  = 150.000
+			traits  = { army_logistics_1 }
+		}
+		portraits={ army={ small="GFX_idea_tur_kazim_karabekir" } }
+	}
+
 	IRQ_Mahmud_Salman={
 		name="Mahmud Salman"
 		advisor={
@@ -213,5 +280,4 @@ characters={
 			army={ small="GFX_idea_SAU_generic_land_1" }
 		}
 	}
-
 }

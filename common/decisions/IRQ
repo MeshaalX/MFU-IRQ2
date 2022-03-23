@@ -1,0 +1,19 @@
+IRQ_the_inevitable_civil_war = {
+
+	IRQ_military_plot_nationalists = {
+
+		priority = 10
+
+		icon = generic_ignite_civil_war
+
+		available = { hidden_trigger = { always = no } }
+
+		days_mission_timeout = 30
+
+		fire_only_once = yes
+
+		activation = { has_country_flag = my_flag }
+
+		is_good = yes
+	}
+}

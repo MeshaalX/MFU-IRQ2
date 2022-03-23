@@ -21,7 +21,7 @@
  SOV_CHI_help:0 "Soviet help with Weapons"
  SOV_SPR_help:0 "Soviet help with Weapons"
  remove_mod_decision:0 "Hide Mod Decisions"
- remove_mod_decision_desc:0 "§RWARNING: THIS CAN'T BE UNDONE"	
+ remove_mod_decision_desc:0 "§RWARNING: THIS CAN'T BE UNDONE" 
 
  ###French Decisions### 
  FRA_1942_guns_decision:0 "Rush the MAS Program"
@@ -90,7 +90,7 @@
  GER_construction_radar_here:0 "§Y[This.GetName]§!: Add §Y1 Radar Station§!\nModify §YArbeitseinsatz§! by\n§YAir Base§! construction speed: §G+1%§!\n§YNaval Base§! construction speed: §G+1%§!\n§YRocket Site§! construction speed: §G+1%§!\n§YRadar Station§! construction speed: §G+1%§!\n§YNuclear Reactor§! construction speed: §G+1%§!\n§YRailway§! construction speed: §G+1%§!\n§YSupply Hub§! construction speed: §G+1%§!\n§YInfrastructure§! construction speed: §G+1%§!\n-----\nUsing the workers enrolled into the §YArbeitseinsatz§!, you can build a Radar Station here. Each level of §YRadar Station§! costs §R2800§! workers. The buildings are built instantaneously.\n\n§RThis action will increase resistance in [This.GetName] by §Y2§!.§!\n\n§LWe currently have [?GER.GER_num_arbeitseinsatz] free workers available.§!"
  GER_constrution_air_base_here:0 "§Y[This.GetName]§!: Add §Y1 Air Base§!\nModify §YArbeitseinsatz§! by\n§YAir Base§! construction speed: §G+1%§!\n§YNaval Base§! construction speed: §G+1%§!\n§YRocket Site§! construction speed: §G+1%§!\n§YRadar Station§! construction speed: §G+1%§!\n§YNuclear Reactor§! construction speed: §G+1%§!\n§YRailway§! construction speed: §G+1%§!\n§YSupply Hub§! construction speed: §G+1%§!\n§YInfrastructure§! construction speed: §G+1%§!\n-----\nUsing the workers enrolled into the §YArbeitseinsatz§!, you can build a Radar Station here. Each level of §YAir Base§! costs §R2200§! workers. The buildings are built instantaneously.\n\n§RThis action will increase resistance in [This.GetName] by §Y2§!.§!\n\n§LWe currently have [?GER.GER_num_arbeitseinsatz] free workers available.§!"
  #Build in Deutschland#
- GER_construction_arms_factory_conversion_here_2:0 "§Y[This.GetName]§!: Add §Y1 Military Factory§!\nModify §YArbeitseinsatz§! by\n§YAir Base§! construction speed: §G+1%§!\n§YNaval Base§! construction speed: §G+1%§!\n§YRocket Site§! construction speed: §G+1%§!\n§YRadar Station§! construction speed: §G+1%§!\n§YNuclear Reactor§! construction speed: §G+1%§!\n§YRailway§! construction speed: §G+1%§!\n§YSupply Hub§! construction speed: §G+1%§!\n§YInfrastructure§! construction speed: §G+1%§!\n-----\nUsing the workers enrolled into the §YArbeitseinsatz§!, you can reconstruct one §YMilitary Factory§! here. The conversion costs §R2000§! workers. The buildings are built instantaneously.\n\n§LWe currently have [?GER.GER_num_arbeitseinsatz] free workers available.§!"
+ GER_construction_arms_factory_conversion_here_2:0 "§Y[This.GetName]§!: Add §Y2 Military Factory§!\nModify §YArbeitseinsatz§! by\n§YAir Base§! construction speed: §G+1%§!\n§YNaval Base§! construction speed: §G+1%§!\n§YRocket Site§! construction speed: §G+1%§!\n§YRadar Station§! construction speed: §G+1%§!\n§YNuclear Reactor§! construction speed: §G+1%§!\n§YRailway§! construction speed: §G+1%§!\n§YSupply Hub§! construction speed: §G+1%§!\n§YInfrastructure§! construction speed: §G+1%§!\n-----\nUsing the workers enrolled into the §YArbeitseinsatz§!, you can reconstruct two §YMilitary Factory§! here. The conversion costs §R2000§! workers. The buildings are built instantaneously.\n\n§LWe currently have [?GER.GER_num_arbeitseinsatz] free workers available.§!"
  GER_construction_infrastructure_here_2:0 "§Y[This.GetName]§!: Add §Y1 Infrastructure§!\nModify §YArbeitseinsatz§! by\n§YAir Base§! construction speed: §G+1%§!\n§YNaval Base§! construction speed: §G+1%§!\n§YRocket Site§! construction speed: §G+1%§!\n§YRadar Station§! construction speed: §G+1%§!\n§YNuclear Reactor§! construction speed: §G+1%§!\n§YRailway§! construction speed: §G+1%§!\n§YSupply Hub§! construction speed: §G+1%§!\n§YInfrastructure§! construction speed: §G+1%§!\n-----\nUsing the workers enrolled into the §YArbeitseinsatz§!, you can build Infrastructure here. Each level of §YInfrastructure§! costs §R1600§! workers, and you can't go over level 10. The buildings are built instantaneously.\n\n§RTo be able to build here, the state needs to have less than level 10 §YInfrastructure§!.§!\n\n§LWe currently have [?GER.GER_num_arbeitseinsatz] free workers available.§!"
  GER_construction_anti_air_here_2:0 "§Y[This.GetName]§!: Add §Y1 Anti-Air§!\nModify §YArbeitseinsatz§! by\n§YAir Base§! construction speed: §G+1%§!\n§YNaval Base§! construction speed: §G+1%§!\n§YRocket Site§! construction speed: §G+1%§!\n§YRadar Station§! construction speed: §G+1%§!\n§YNuclear Reactor§! construction speed: §G+1%§!\n§YRailway§! construction speed: §G+1%§!\n§YSupply Hub§! construction speed: §G+1%§!\n§YInfrastructure§! construction speed: §G+1%§!\n-----\nUsing the workers enrolled into the §YArbeitseinsatz§!, you can build Infrastructure here. Each level of §YAnti-Air§! costs §R2200 workers§!, and you can't go over level 5. The buildings are built instantaneously.\n\n§RTo be able to build here, the state needs to have less than a level 5 §YAnti-Air§!.§!\n\n§LWe currently have [?GER.GER_num_arbeitseinsatz] free workers available.§!"
  GER_construction_radar_here_2:0 "§Y[This.GetName]§!: Add §Y1 Radar Station§!\nModify §YArbeitseinsatz§! by\n§YAir Base§! construction speed: §G+1%§!\n§YNaval Base§! construction speed: §G+1%§!\n§YRocket Site§! construction speed: §G+1%§!\n§YRadar Station§! construction speed: §G+1%§!\n§YNuclear Reactor§! construction speed: §G+1%§!\n§YRailway§! construction speed: §G+1%§!\n§YSupply Hub§! construction speed: §G+1%§!\n§YInfrastructure§! construction speed: §G+1%§!\n-----\nUsing the workers enrolled into the §YArbeitseinsatz§!, you can build a Radar Station here. Each level of §YRadar Station§! costs §R2800§! workers. The buildings are built instantaneously.\n\n§RTo be able to build here, the state needs to have less than a level 5 §YRadar Station§!.§!\n\n§LWe currently have [?GER.GER_num_arbeitseinsatz] free workers available.§!"
@@ -224,6 +224,7 @@ GER_recruit_workers_USSR:0 "Recruit Workers in the Soviet Territories"
  ENG_invest_in_home_defence:0 "Invest in Home Defense"
  ENG_procure_armaments_contract:0 "Procure Armament Contract"
  ENG_expand_home_industry:0 "Modernize Home Industry"
+ ENG_military_industry_boost:0 "Modernize Military Industry"
  eng_medium_tank_1944:0 "The Firefly, Medium Tank Destroyer" 
  ENG_length_of_shifts:0 "More Factory Shifts"
  ENG_decrease_length_of_shifts:0 "Less Factory Shifts"
@@ -241,7 +242,7 @@ GER_recruit_workers_USSR:0 "Recruit Workers in the Soviet Territories"
  ENG_high_cost_trigger_tt:0 "More than §Y100 Million Pounds§! available to spend."
  ###ENG###
  ENG_the_british_expeditionary_force:0 "Prepare the British Expeditionary Force"
- ENG_BEF_tt:0 "§Y700§! units of English §YHurricane MK II§! or §YSpitfire MK V§! and §Y450§! units of §YWhirlwind MK I§! or §YBeaufighter F MK I§! depending on which you have researched and §Y600§! units of §YCruiser MK II§! or §Y600§! units of §YCrusader§! and §Y425§! units of §YMatilda II§! if you have them researched as well as §Y10.00k§! Infantry Equipment and §Y700§! Light Artillery, will be added to stockpile"
+ ENG_BEF_tt:0 "§Y700§! units of English §YHurricane MK II§! or §YSpitfire MK V§! and §Y450§! units of §YWhirlwind MK I§! or §YBeaufighter F MK I§! depending on which you have researched and §Y600§! units of §YValentine MK I§! or §Y600§! units of §YCrusader§! and §Y425§! units of §YMatilda II§! if you have them researched as well as §Y10.00k§! Infantry Equipment and §Y700§! Light Artillery, will be added to stockpile"
  ENG_air_defense_focus_built_max_tt:0 "Set level 6 §YAnti-Air§! in §YSouthern England§!, and §YNorthern England§!"
  ENG_air_defense_focus_built_min_tt:0 "Set level 4 §YAnti-Air§! in §YSouthern England§!, and §YNorthern England§!"
  AST_annex_nzl:0 "Annex New Zeeland"
@@ -446,6 +447,13 @@ GER_recruit_workers_USSR:0 "Recruit Workers in the Soviet Territories"
 
 
  ###USA###
+ USA_arms_shipment_category:0 "Arms Shipment"
+ procure_guns:0 "Procure Guns"
+ procure_support_equipment:0 "Procure Support Equipment"
+ procure_special_equipment:0 "Procure Special Equipment"
+ procure_artillery:0 "Procure Artillery"
+ procure_trucks:0 "Procure Trucks"
+ procure_heavy_guns:0 "Procure Heavy Guns"
  USA_reciprocal_trade_decision_category:0 "Reciprocal Trade"
  USA_expanding_trade_in_south_america:0 "Expand Trade in South America"
  USA_expanding_trade_in_brazil:0 "Expand Trade in Brazil"

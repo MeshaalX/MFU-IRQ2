@@ -265,8 +265,8 @@ NCountry = {
  																					
 	INTERCEPTION_WAR_SUPPORT_SCALE = 0.00002,		-- Scaling of interceptions to war support impact
     INTERCEPTION_BOMBING_WAR_SUPPORT_IMPACT = 0.2,	-- Max impact of interceptions on the war support
-	BOMBING_WAR_SUPPORT_PENALTY_SCALE = -0.00015, 			-- Scaling of bomber damage to war support impact, will be added weekly as a war support penalty
-	MAX_BOMBING_WEEKLY_WAR_SUPPORT_PENALTY = -0.02,			-- Max penalty that will gained per week from bomber's damage
+	BOMBING_WAR_SUPPORT_PENALTY_SCALE = -0.0001, 			-- Scaling of bomber damage to war support impact, will be added weekly as a war support penalty
+	MAX_BOMBING_WEEKLY_WAR_SUPPORT_PENALTY = -0.01,			-- Max penalty that will gained per week from bomber's damage
 	BOMBING_WEEKLY_WAR_SUPPORT_PENALTY_DECAY = 0.001,		-- Weekly decay of bomber damage war support penalty
 	MAX_BOMBING_WAR_SUPPORT_IMPACT = -0.4,					-- Max total penalty from bomber's damage
 	
@@ -515,7 +515,7 @@ NProduction = {
 	LICENSE_EQUIPMENT_SPEED_NOT_FACTION = -0.10,		-- MIC speed modifier for licensed equipment for not being in faction
 	LICENSE_EQUIPMENT_UPGRADE_XP_FACTOR = 2.0,			-- XP cost for upgrading licensed equipment
 	LICENSE_EQUIPMENT_SPEED_NO_LICENSE = -0.50,			-- Penalty for producing non licensed equipment
-	CONVERSION_SPEED_BONUS = 1.5,						-- Modifier to the production speed when converting equipment
+	CONVERSION_SPEED_BONUS = 1,						-- Modifier to the production speed when converting equipment
     EQUIPMENT_MODULE_ADD_XP_COST = 0,					-- XP cost for adding a new equipment module in an empty slot when creating an equipment variant.
 	EQUIPMENT_MODULE_REPLACE_XP_COST = 0,				-- XP cost for replacing one equipment module with an unrelated module when creating an equipment variant.
 	EQUIPMENT_MODULE_CONVERT_XP_COST = 0,				-- XP cost for converting one equipment module to a related module when creating an equipment variant.
@@ -564,7 +564,7 @@ NPolitics = {
 NBuildings = {
 	SUPPLY_ROUTE_RESOURCE_BONUS = 0.2,   -- multiplicative resource bonus for having a railway/naval connection to the capital
 	INFRASTRUCTURE_MUD_EFFECT = -0.8, -- multiplicative effect on mud growth for max infra
-	ANTI_AIR_SUPERIORITY_MULT = 5.0,	-- How much air superiority reduction to the enemy does our AA guns? Normally each building level = -1 reduction. With this multiplier.
+	ANTI_AIR_SUPERIORITY_MULT = 4.0,	-- How much air superiority reduction to the enemy does our AA guns? Normally each building level = -1 reduction. With this multiplier.
 	MAX_BUILDING_LEVELS = 15,			-- Max levels a building can have.
 	AIRBASE_CAPACITY_MULT = 100,		-- Each level of airbase building multiplied by this, gives capacity (max operational value). Value is int. 1 for each airplane.
 	ROCKETSITE_CAPACITY_MULT = 100,		-- Each level of rocketsite building multiplied by this, gives capacity (max operational value). Value is int. 1 for each rocket.
@@ -702,7 +702,7 @@ NMilitary = {
 	
 	LAND_COMBAT_ORG_DICE_SIZE = 4,                 -- nr of damage dice
 	LAND_COMBAT_STR_DICE_SIZE = 2,                 -- nr of damage dice
-	LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.055,        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
+	LAND_COMBAT_STR_DAMAGE_MODIFIER = 0.058,        -- global damage modifier... but some equipment is returned at end of battles see : EQUIPMENT_COMBAT_LOSS_FACTOR
 	LAND_COMBAT_ORG_DAMAGE_MODIFIER = 0.05,        -- global damage modifier
 	LAND_AIR_COMBAT_STR_DAMAGE_MODIFIER = 0.016,    -- air global damage modifier
 	LAND_AIR_COMBAT_ORG_DAMAGE_MODIFIER = 0.014,    -- global damage modifier
@@ -745,7 +745,7 @@ NMilitary = {
 	ENEMY_AIR_SUPERIORITY_IMPACT = -0.4,           -- effect on defense due to enemy air superiorty
 	ENEMY_AIR_SUPERIORITY_DEFENSE = 0.45,	       -- more AA attack will approach this amount of help (diminishing returns)
 	ENEMY_AIR_SUPERIORITY_DEFENSE_STEEPNESS = 75, -- how quickly defense approaches the max impact diminishing returns curve
-	ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.35,     -- effect on speed due to enemy air superiority
+	ENEMY_AIR_SUPERIORITY_SPEED_IMPACT = -0.2,     -- effect on speed due to enemy air superiority
 
 	ANTI_AIR_TARGETTING_TO_CHANCE = 0.03,			-- Balancing value to determine the chance of ground AA hitting an attacking airplane, affecting both the effective average damage done by AA to airplanes, and the reduction of damage done by airplanes due to AA support
 	ANTI_AIR_ATTACK_TO_AMOUNT = 0.003,				-- Balancing value to convert equipment stat anti_air_attack to the random % value of airplanes being hit.																																																																
@@ -1052,16 +1052,16 @@ NAir = {
 	AIR_WING_ATTACK_LOGISTICS_NO_TRUCK_DISRUPTION_FACTOR = 0.01, -- If a unit isn't motorized, still disrupt its supply by damage * this
 	AIR_WING_ATTACK_LOGISTICS_TRUCK_DAMAGE_FACTOR = 0.25,
 	AIR_WING_ATTACK_LOGISTICS_INFRA_DAMAGE_SPILL_FACTOR = 0.0008, -- Portion of truck damage to additionally deal to infrastructure
-	AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_FACTOR = 0.0375,
+	AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_FACTOR = 0.035,
 	AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_DISRUPTION_MITIGATION = 6.0, -- Multiply Train Damage by (Smooth / (Smooth + (Disruption * Mitigation)))
 	AIR_WING_ATTACK_LOGISTICS_TRAIN_DAMAGE_DISRUPTION_SMOOTHING = 5.0,
-	AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0.003, -- Portion of train damage to additionally deal to railways
+	AIR_WING_ATTACK_LOGISTICS_RAILWAY_DAMAGE_SPILL_FACTOR = 0.002, -- Portion of train damage to additionally deal to railways
 
 	AIR_WING_ATTACK_LOGISTICS_DISRUPTION_MIN_DAMAGE_FACTOR = 0.05, -- Multiply train damage by this factor, scale from 1.0 at 0 disruption to this at AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER
 	AIR_WING_ATTACK_LOGISTICS_MAX_DISRUPTION_DAMAGE_TO_CONSIDER = 15.0, -- see above
 	AIR_WING_ATTACK_LOGISTICS_DIRECT_DISRUPTION_DAMAGE_FACTOR = 0.01, -- Disruption damage to supply throughput done by bombing damage, not dependant on killing trains which also causes diruption.
 
-	AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.1, -- max trucks we can destroy in one instance of a logistics strike
+	AIR_WING_ATTACK_LOGISTICS_TRUCK_MAX_FACTOR = 0.05, -- max trucks we can destroy in one instance of a logistics strike
 	AIR_WING_FLIGHT_SPEED_MULT = 0.02,					-- Global speed multiplier for airplanes (affects fe.transferring to another base)
 	AIR_WING_MAX_STATS_ATTACK = 100,					-- Max stats
 	AIR_WING_MAX_STATS_DEFENCE = 100,
@@ -1147,7 +1147,7 @@ NAir = {
 	LEND_LEASED_EQUIPMENT_EXPERIENCE_GAIN = 0.5,		-- Value used for equipment
 	ANTI_AIR_PLANE_DAMAGE_FACTOR = 0.4,					-- Anti Air Gun Damage factor
 	ANTI_AIR_PLANE_DAMAGE_CHANCE = 0.1,					-- Anti Air Gun hit chance
-	ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.5,	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
+	ANTI_AIR_ATTACK_TO_DAMAGE_REDUCTION_FACTOR = 0.75,	-- Balancing value to convert equipment stat anti_air_attack to the damage reduction modifier apply to incoming air attacks against units with AA.
 	ANTI_AIR_MAXIMUM_DAMAGE_REDUCTION_FACTOR = 0.6,	-- Maximum damage reduction factor applied to incoming air attacks against units with AA.
 	AIR_DEPLOYMENT_DAYS = 1,							-- Days to deploy one air wing
 	PORT_STRIKE_ENEMY_SUPERIORITY_LIMIT = 1.1,			-- Min air superiority for performing of naval strike
@@ -1174,8 +1174,8 @@ NAir = {
 	AIR_WING_XP_TRAINING_MAX = 200.0, 									--Max average XP achieved with training.
 	
 	AIR_WING_XP_TRAINING_MISSION_GAIN_DAILY = 3.0, 						--Daily gain when running training exercise mission
-	AIR_WING_XP_AIR_VS_AIR_COMBAT_GAIN = 0.425, 							--Wings in combat gain extra XP	
-	AIR_WING_XP_GROUND_MISSION_COMPLETED_GAIN = 0.3, 					--Bombers bombing, CAS cassing, NBs nbing, kamikazees kamikazeeing, etc.	
+	AIR_WING_XP_AIR_VS_AIR_COMBAT_GAIN = 0.2, 							--Wings in combat gain extra XP	
+	AIR_WING_XP_GROUND_MISSION_COMPLETED_GAIN = 0.2, 					--Bombers bombing, CAS cassing, NBs nbing, kamikazees kamikazeeing, etc.	
 	AIR_WING_XP_RECON_MISSION_COMPLETED_GAIN = 0.05, 					--recon mission
 
 	AIR_WING_COUNTRY_XP_FROM_TRAINING_FACTOR = 0.005, 					--Factor on country Air XP gained from wing training
@@ -1520,7 +1520,7 @@ NNavy = {
 	EXPERIENCE_FACTOR_NON_CARRIER_GAIN = 0.03,						-- Xp gain by non-carrier ships in the combat
 	EXPERIENCE_FACTOR_CARRIER_GAIN = 0.08,							-- Xp gain by carrier ships in the combat
 	FIELD_EXPERIENCE_SCALE = 0.06,
-	FIELD_EXPERIENCE_MAX_PER_DAY = 50,								-- Most xp you can gain per day
+	FIELD_EXPERIENCE_MAX_PER_DAY = 30,								-- Most xp you can gain per day
 	LEADER_EXPERIENCE_SCALE = 1.0,
 	BATTLE_NAME_VP_FACTOR = 100,									-- Name is given by ((VP value) * BATTLE_NAME_VP_FACTOR) / (Distance VP -> battle)
 	BATTLE_NAME_VP_CUTOFF = 1.0,									-- If best score of above calculation is below this, name will be that of region.
@@ -1737,12 +1737,12 @@ NNavy = {
 	ACCIDENTS_CHANCE_BALANCE_FACTOR = 0.04,							-- General chance for naval accidents for balancing the gameplay.
 																	-- The Formula: Min( TRAINING_MAX_DAILY_COUNTRY_EXP * Ratio, TRAINING_DAILY_COUNTRY_EXP_FACTOR * ( TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR * TrainingShipCount / CountryShipCount 
 																	--              + TRAINING_DAILY_COUNTRY_EXP_MANPOWER_FACTOR * Manpower + TRAINING_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR * Manpower / CountryShipCount ) ) 
-	TRAINING_EXPERIENCE_FACTOR = 0.2,								-- Amount of exp each ship gain every 24h while training (before modifiers)
+	TRAINING_EXPERIENCE_FACTOR = 0.18,								-- Amount of exp each ship gain every 24h while training (before modifiers)
 	TRAINING_DAILY_COUNTRY_EXP_FACTOR = 0.001,						-- Factor used to scale the Daily Country Navy XP gain
-	TRAINING_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.006,					-- Factor used to scale the sum of the training manpower for the Daily Country Navy XP gain
+	TRAINING_DAILY_COUNTRY_EXP_MANPOWER_FACTOR = 0.004,					-- Factor used to scale the sum of the training manpower for the Daily Country Navy XP gain
 	TRAINING_DAILY_COUNTRY_EXP_MANPOWER_RATIO_FACTOR = 0.01,				-- Factor used to scale the sum of the manpower divided by the country's number of ship for the Daily Country Navy XP gain
-	TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR =  300.0,					-- Factor used to scale the ratio of training ships for the Daily Country Navy XP gain
-	TRAINING_MAX_DAILY_COUNTRY_EXP = 3.5,							-- Maximum navy XP daily gain
+	TRAINING_DAILY_COUNTRY_EXP_SHIP_RATIO_FACTOR =  250.0,					-- Factor used to scale the ratio of training ships for the Daily Country Navy XP gain
+	TRAINING_MAX_DAILY_COUNTRY_EXP = 2.7,							-- Maximum navy XP daily gain
 	TRAINING_MIN_STRENGTH = 0.1,									-- if strength is less than this, the unit will not contribute to training and cant be damaged by training
 	
 	TRAINING_ORG = 0.2,												-- max organization on traiaing mission

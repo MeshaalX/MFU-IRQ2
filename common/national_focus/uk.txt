@@ -7930,6 +7930,7 @@ focus_tree = {
 		available_if_capitulated = yes
 
 		completion_reward = {
+			unlock_decision_tooltip = ENG_military_industry_boost
 			add_ideas = low_economic_mobilisation
 			add_stability = -0.05
 			add_war_support = 0.1
@@ -8059,6 +8060,18 @@ focus_tree = {
 					}
 				}								
 			}
+			126 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -8083,8 +8096,20 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_stability = -0.075
+			add_stability = -0.05
 			country_event = { id = mtg_britain.22 }
+			125 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -8107,11 +8132,23 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_stability = -0.075
+			add_stability = -0.05
 			custom_effect_tooltip = ENG_no_further_appeasement_tt
 			add_ideas = partial_economic_mobilisation
 			add_ideas = ENG_no_further_appeasement_idea
 			hidden_effect = { news_event = { id = mtg_news.16 days = 1 } }
+			127 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 6
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 4
+			}
 		}
 	}
 
@@ -8943,8 +8980,20 @@ focus_tree = {
 			factor = 1
 		}	
 		completion_reward = {
-			add_stability = -0.075
+			add_stability = -0.05
 			remove_ideas = ENG_the_war_to_end_all_wars
+			811 = {
+				remove_building = {
+					type = industrial_complex
+					level = 2
+				}
+				add_building_construction = {
+					type = arms_factory
+					level = 4
+					instant_build = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
 		}
 	}
 
@@ -8980,7 +9029,12 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			navy_experience = 75
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = naval_doctrine
+			}
 			if = {
 				limit = {
 					has_dlc = "Together for Victory"
@@ -9062,7 +9116,12 @@ focus_tree = {
 			factor = 10
 		}	
 		completion_reward = {
-			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
 			GER = {
 				if = {
 					limit = { NOT = { is_in_faction_with = ENG } }

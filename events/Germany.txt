@@ -74,6 +74,66 @@ country_event = {
 		}
 	}
 }
+country_event = {
+	id = germany.565
+	title = germany.565.t
+	desc = germany.565.d
+	picture = GFX_event_GER_blomberg
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.565.a
+		retire_character = GER_werner_blomberg
+		retire_character = GER_werner_fritsch
+		swap_ideas = { 
+			remove_idea = og_general_staff
+			add_idea = general_staff0
+		}
+		
+	}
+	option = {
+		name = germany.565.b
+		add_political_power = -20
+		hidden_effect = {
+			country_event = { days = 35 id = germany.566 }
+		}	
+	}
+}
+country_event = {
+	id = germany.566
+	title = germany.566.t
+	desc = germany.566.d
+	picture = GFX_report_event_hitler_handshake
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = germany.566.a
+		add_political_power = -30
+		retire_character = GER_werner_blomberg
+		retire_character = GER_werner_fritsch
+		swap_ideas = { 
+			remove_idea = og_general_staff
+			add_idea = general_staff0
+		}
+		
+	}
+	option = {
+		name = germany.566.b
+		add_political_power = -60
+		custom_effect_tooltip = remove_chief_of_army
+		show_ideas_tooltip = GER_werner_fritsch
+		swap_ideas = { 
+			remove_idea = og_general_staff
+			add_idea = general_staff0
+		}
+		hidden_effect = {
+			set_country_flag = Purged
+		}
+		
+	}
+}
 
 #Spain_treaty( befriend spain )
 country_event = {
@@ -4532,6 +4592,11 @@ country_event = {
 			limit = { is_ai = no }
 			
 		   custom_effect_tooltip = captured_Equipment_tt
+		   
+		   set_technology = {
+			    ger_1940_light_tank_chassis = 1
+			}
+
 	
 		   add_equipment_to_stockpile = {
 				type = infantry_equipment_1
@@ -4565,11 +4630,12 @@ country_event = {
 				amount = 500
 				producer = CZE
 			}
-			add_equipment_to_stockpile = {
-				type = light_tank_chassis
-				amount = 800
-				producer = CZE
-			}
+            add_equipment_to_stockpile = {
+                  type = light_tank_chassis_1936
+                  amount = 500
+                  producer = CZE
+                  variant_name = "Lt.Vz.35"
+            }
 			add_equipment_to_stockpile = {
 				type = horse_equipment_0
 				amount = 4000
@@ -4593,7 +4659,10 @@ country_event = {
 			}
 			if = { 
 				limit = {
-					is_ai = yes 
+					is_ai = yes
+				}
+		        set_technology = {
+			         ger_1940_light_tank_chassis = 1
 				}
 				add_equipment_to_stockpile = {
 					type = infantry_equipment_1
@@ -4627,11 +4696,12 @@ country_event = {
 					amount = 5000
 					producer = CZE
 				}
-				add_equipment_to_stockpile = {
-					type = light_tank_chassis
-					amount = 800
-					producer = CZE
-				}
+                add_equipment_to_stockpile = {
+                    type = light_tank_chassis_1936
+                    amount = 500
+                    producer = CZE
+                    variant_name = "Lt.Vz.35"
+                }
 				add_equipment_to_stockpile = {
 					type = horse_equipment_0
 					amount = 20000

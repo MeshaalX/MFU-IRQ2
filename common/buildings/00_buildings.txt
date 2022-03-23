@@ -48,7 +48,7 @@ buildings = {
 		air_base = yes
 		max_level = 40
 		value = 1
-		damage_factor = 0.4
+		damage_factor = 0.2
 		infrastructure_construction_effect = yes
 	}
 	# Province buildings
@@ -142,13 +142,13 @@ buildings = {
 							 
 		#max_level = 1
 		shares_slots = yes
-		value = 1
+		value = 10
 		infrastructure_construction_effect = yes
 		fuel_silo = yes
 		
 		show_modifier = yes
 		max_fuel_building = 200.0 #k
-		damage_factor = 0.05
+		damage_factor = 0.00
 	}
 	synthetic_rubber_refinery = {
 		show_on_map = 1
@@ -211,7 +211,7 @@ buildings = {
 	rail_way = {
 		base_cost = 170
 		per_level_extra_cost = 60
-		damage_factor = 0.3
+		damage_factor = 0.05
 		provincial = yes
 		disabled_in_dmz = yes
 		icon_frame = 17
